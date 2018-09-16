@@ -1,0 +1,38 @@
+rtmv.amxx|sma
+
+_______________
+
+Discreption : This is a newer version of the rock the vote ( rtv ) plugin which Rockes the map to vote
+But this rtmv ( Rock the mod vote ) will rock the mod vote while there are no admins in the server
+
+_______________
+
+Cvars : 
+
+amx_cvar sv_rtmv "1" / 1 = On , 2 = Off
+amx_cvar sv_rtmvtime "15" / How Many Minutes Till The Player Can rtmv
+amx_cvar sv_rtmvcolor "2" / The Color of the rtmv .. , 1 = green , 2 = blue , 3 = red
+
+_______________
+
+Lang : 
+
+Rock the mod vote has started / thats after the 15 minutes of the start of rtmv
+%s Votes Left For The rtmv To Begin / how much players need to vote to start rtmv
+
+ 
+_______________
+
+Commands : 
+
+/rtmv / Start Rocking the mod vote
+/rtmvtime / Shows Players How Many Minutes Keft to rtmv
+
+_______________
+
+Credits : 
+
+pokemonmaster : creator of plugin
+Haider99xD : idea of plugin
+
+:)))

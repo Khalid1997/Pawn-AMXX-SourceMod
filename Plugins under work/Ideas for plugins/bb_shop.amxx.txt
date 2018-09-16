@@ -1,0 +1,81 @@
+bb_shop.amxx | bb_shop.sma
+
+Discreption : 
+
+Zombies & Humans Get To Have A Command /bbshop , The bb Shop Has Lots Of Items You Can Buy Them By Gaining Points From Killing OR Hitting 
+
+How To Play it : 
+
+Zombies Get To Have The Command /zmshop , And by typing /bbshop A Menu Shows Contain These Items : 
+( Medic Kit ) - ( 150 Points )
+( Order Bomb ) - ( 150 Points ) -  see u gonna buy a bomb called order bomb or command bomb 
+when the zombie throw the order bomb on a human that human gets confused and appear to the human a list says kill ur self or donate to that zombie 50 points HHHHHHH I LIKE THIS IDE
+( Invisibilty ) - ( 10 sec ) - ( 100 Points )
+( Low Gravity ) - ( 75 ) - This Doesnt Work On The Jumper Zombies
+( Flash Grenade ) - ( 50 Points )
+( NoClip ) - ( 5 sec ) - ( 200 Points )
+( Camouflage ) - ( 15 sec ) - ( 100 Points ) - Zombie to human
+ 
+AND BTW The Zombies Will Get For Each Kill 20 Points
+And for each 25 damage 1 point
+
+___________
+
+Now For The Humans Get To have /hmshopAnd Show A Menu Contains These Items
+
+( Gain HP ) - ( 30 Points )
+( Slay A Zombie ) - ( 400 Points )
+( Super Cut Knife ) - ( 150 ) - 
+( God Mode ) - ( 7 Sec ) - ( 100 Points )
+( Unlimited Clip ) - ( 200 Points )
+( 100 Armor ) - ( 75 Points )
+
+Each kill 25 points
+And BTW For Each 200 Damage Humans Get To Have 2 Points
+
+Cvars :
+
+bb_givepoints ".." / Amount Of Points Given
+bb_takepoints ".." / Amount Of Points Taken
+bb_pointsmax ".." / The Max Amount That A Player Can Gain
+bb_showpoints "Players name" / Show Amount Of The Players Point
+bb_medickit "750" / Gives HP / Default "750"
+bb_orderbomb "4" / 1 = Normal , 2 = Trip Laser , 3 = Impact , 4 = Homing
+bb_invisibilty "2" / Low Invisiblty = 1 , Normal = 2 , High = 3
+bb_lowgravity "400" / Low Gravity  = 400 gravity
+bb_flashgrenade "2" / 1 = 1 Flash Grenade , 2 = 2 Flash Grenades
+bb_noclip "1" / 1 = Can Be Hitted While Having Noclip , 2 = Cant Be Hitted While Having noclip
+bb_camouflageskin "2" / 1 = Moving Base LOL , 2 = CT Skin
+bb_hp "50" / Default "50"
+bb_jetpackuse "2" / 1 = Using Jetpack By CTRL + Space , 2 = Using Jetpack By Right Click
+bb_slayzombie "2" / 1 = Zombie If Slayen He Cant Get Alive Again even if using /respawn , 2 = Zombie if slayen can be respawned Again 
+bb_supercutdg "1" / 1 = Auto damage ( 100-300 ) , 2 = Damage 200 
+bb_godmode "1" / 1 = god mode for 7 sec , 2 = god mode auto sec ( 1-15 )
+bb_unlimitedclip "1" / 1 = For 30 Sec , 2 = Permanently 
+
+
+
+command : 
+
+/bbshop / Opens up the bb shop
+/help / Show A Menu Of These Commands For Help
+/points / Shows Curtain Points
+/dpoints / Donate Points
+/savepoints / Save Points 
+/toppoints / show top15 points players
+Example:
+Khalid - 300 Points
+Haider - 100 Points 
+Casper - 35 Points
+
+admin commands :
+
+/showppoints / show players points 
+/givepoints
+/takepoints
+/slayzombie
+
+Credits :
+
+pokemonmaster - Creator Of Plugin
+Haider99xD : idea of the plugin xD :D :P

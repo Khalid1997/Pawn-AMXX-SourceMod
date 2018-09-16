@@ -1,0 +1,1 @@
+write /ghost in console ..

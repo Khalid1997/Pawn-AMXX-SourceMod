@@ -1,0 +1,63 @@
+/*
+// -----------------------------------------------
+// ParseString(String:szBuffer[], any:..);
+// -----------------------------------------------
+public Native_ParseString(Handle:hPlugin, iArgsNum)
+{
+	if(iArgsNum < 3)
+	{
+		ThrowNativeError(SP_ERROR_ABORTED, "Missing arguments.");
+		return 0;
+	}
+	
+	if( (iArgsNum - 1) % 2 )
+	{
+		ThrowNativeError(SP_ERROR_ABORTED, "Missing either string argument(s) or size argument(s)");
+		return 0;
+	}
+	
+	new iBufferSize; GetNativeStringLength(1, iBufferSize);
+	decl String:szBuffer[iBufferSize];
+	
+	GetNativeString(1, szBuffer, iBufferSize);
+	
+	if(!szBuffer[0])
+	{
+		ThrowNativeError(SP_ERROR_ABORTED, "Buffer is empty");
+		return 0;
+	}
+	
+	new iParts = 0, iIndex, iStrtIndx = -1, i, j, iSize, iParamPos;
+	while( ( iIndex = StrContains(szBuffer[iIndex ? (iIndex + 1) : iIndex], "\"", false )  != -1 ) )
+	{
+		PrintToServer(" *** iIndex %d", iIndex);
+		PrintToServer(" *** szBuffer[iIndex] = %s", szBuffer[iIndex]);
+		
+		if(iStrtIndx == -1)
+		{
+			iStrtIndx = (++iIndex);
+			
+			continue;
+		}
+		
+		++iParts;
+		iParamPos = (iParts * 2) + 1
+		
+		PrintToServer("*** Iparampos %d", iParamPos)
+		
+		decl String:szPart[ ( iSize = GetNativeCell( iParamPos ) ) ];
+		
+		for( i = iStrtIndx, j = 0; i < iIndex && j < iSize; i++, j++) 
+		{
+			szPart[j] = szBuffer[i];
+		}
+		
+		szPart[j + 1] = 0
+		SetNativeString(iParamPos, szPart, iSize, true);
+		PrintToServer(szPart);
+		iStrtIndx = -1; // reset
+
+	}
+	
+	return iParts;
+}*/

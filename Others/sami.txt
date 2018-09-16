@@ -1,0 +1,253 @@
+sam'z ;: hi khalid  ! u closed dubai-gamerz?
+no name..: la
+no name..: wait bwreek al message
+no name..: kan fee lag
+no name..: fkrnah ddos
+no name..: klmt al shrka
+no name..: galo mo ddoss
+no name..: hatha al server ysthlk 10 mb
+no name..: --
+no name..: -.-
+no name..: w bagy bandwidth 20 gb bs a9ln
+no name..: Hello Mr. Khalid,
+
+We have checked the issue and found that it's not a DDOS attack as there is no inbound traffic. We have noticed that your server is pulling maximum amount of bandwidth (more than 10mbps) and hence you are facing the issue. We cannot provide this maximum rate limit to your VPS as it will affect other VPS in the same node. You need to check the settings of your game software if you can reduce the rate limit to less than "2mbps" to resolve this problem.
+no name..: We will restart the VPS, but once you logged in, kindly stop all the game services asap to prevent the problem happening again.
+no name..: Hello Mr. Khalid,
+
+We have rebooted the server and please check now. Please stop the game services now.
+
+The remaining bandwidth is 20GB. You have used more than 25GB of bandwidth Yesterday itself.
+no name..: ya5y 250 gb galeel 6l3 -.-
+sam'z ;: blll
+sam'z ;: shreka website?
+no name..: ye
+no name..: df3 alzeer ymkn 800 drhm
+no name..: -.-
+no name..: w 3l fa'9y
+sam'z ;: and alzeer wanted to let ginny pay with him
+sam'z ;: so dubai gamerz and ginny servers same pc
+no name..: asasn pc 5ays ma yst7ml shy
+sam'z ;: can i have the website for the company
+no name..: hostware.ae bs la t36eeh la 7d 3ashan alzeer 7lfny a9ln
+sam'z ;: company 5aysa. i will see a better 1
+no name..: dwrna 100 mra
+no name..: asasn kan fee w7da asmha
+no name..: nseeto -.-
+no name..: ra7 shraha gbl
+no name..: bs 6l3 al server f miami
+no name..: '97ko 3aleena
+sam'z ;: u said 250 gb bandwith?  its 1868 dhs
+no name..: hma 3a6oona zyada bandwidth kan fee 3rf
+no name..: 3r'9
+no name..: kan fee shrka ymkn ar59
+no name..: bs al os linux centos -.-
+sam'z ;: linux cheaper than windows. ma3roof
+sam'z ;: http://www.uaesol.com/
+sam'z ;: 3ndk ha
+sam'z ;: gg price
+sam'z ;: everything with uae
+sam'z ;: where servers located? usa
+sam'z ;: chlaaaab
+no name..: sfna ha
+no name..: lsa bgool -.-
+no name..: ana ma shftha
+sam'z ;: klah n9b
+no name..: alzeer ally shafha
+no name..: shooof hatha ally shareena mna awl mra
+no name..: http://avanetco.com/services/17
+no name..: n9abeen wlad ...
+sam'z ;: what about saudi arabian vpn?
+sam'z ;: or naah
+no name..: madry xd
+no name..: hatha ally klmtk 3na mal al linux
+no name..: http://www.ucg.ae/Web-Hosting/UCG-VPS.htm
+sam'z ;: 2000 gb monthly
+sam'z ;: 44 $
+no name..: give me website
+sam'z ;: http://www.nashirnet.net/english/services/5.html
+no name..: hatha akeed s3ody?
+sam'z ;: check contact us
+sam'z ;: servers in riyadh
+sam'z ;: bs
+sam'z ;: no gurantees of course
+sam'z ;: DataCenter Location
+Kingdom of Saudi Arabia
+Riyadh – Olaya Street
+Alandalus Center – Gate11 – Floor 2
+sam'z ;: i would also send them an email just 2 double check
+no name..: ba5th mnhm ip at2kd mn al ping
+no name..: lw chi s3ra gd
+no name..: ana bft7 :P
+sam'z ;: yeah
+no name..: sami km al ping m3ak 3la hatha al server?
+no name..: 46.151.208.35:27016
+sam'z ;: 34
+sam'z ;: 35
+sam'z ;: 31 - 32
+no name..: nice
+sam'z ;: if u want saudi arabian host, i think i have 1
+sam'z ;: like etisalat, but for mobily company
+no name..: bs lw hatha f3ln uae
+no name..: http://www.ucg.ae/Web-Hosting/UCG-VPS.htm
+no name..: a7sn w a7sn
+sam'z ;: i will send them an email
+no name..: l2na alzeer ma atw83 ena y8tn3 fl ksa
+no name..: xd
+no name..: bs linux :/
+no name..: mn by3rf lel linux a9ln xd
+sam'z ;: D.M
+sam'z ;: i can convince him
+sam'z ;: bs
+sam'z ;: 50%
+no name..: xd
+no name..: ho b6l yl3b 97?
+sam'z ;: he is
+sam'z ;: a game called rust
+sam'z ;: and csgo
+sam'z ;: and garrymod
+no name..: grbt ana linux gbl -.-
+no name..: kan ubuntu ymkn
+sam'z ;: fe 3ndk itx also
+no name..: thany yoom nzlt windows :D
+sam'z ;: ahaha
+no name..: itx y3rf ? O.O
+sam'z ;: he is a hacker :D
+sam'z ;: hacks with linux
+no name..: aha
+no name..: kman
+no name..: xd
+no name..: sha'3aleen
+sam'z ;: fl00d knows in linux cs 1.6
+sam'z ;: not in full linux
+sam'z ;: bs d.m pro in making linux ddos proof
+sam'z ;: and stuff like that
+no name..: lw wa7d mnhm yeegy a7sn w a7sn\
+no name..: bs lw ma 7d gdr
+no name..: a7na mnt3lm
+no name..: mnstfeed sho 5sraneen =D
+sam'z ;: u can download linux and start learning ^^
+no name..: mb fa'9y :P
+no name..: mmkn anzl al linux wl windows 3la nfs al hdd 97?
+sam'z ;: yeah
+sam'z ;: google it
+sam'z ;: they will tell u how
+sam'z ;: brb. 7amaam x.x
+no name..: tyt
+sam'z ; is now Online.
+sam'z ;: btw el vps they give u cpanel access
+sam'z ;: i dunno what it does but xxxx
+no name..: mo cpanel
+no name..: remote desktop
+sam'z ;: omg
+sam'z ;: the link u gave me
+sam'z ;: -_-
+no name..: td5l 3la al desktop mal al pc
+sam'z ;: its for website hosting
+sam'z ;: http://ucg.ae/Web-Hosting/UCG-VPS.htm
+no name..: la walla ?
+sam'z ;: hhhhhhhhhhhhhhh
+no name..: gd?
+no name..: xd
+sam'z ;: if u check out
+sam'z ;: they tell u do u have a domain or u want to buy
+sam'z ;: http://ucg.ae/Web-Hosting/Dedicated-Servers.htm
+sam'z ;: this is the 1
+sam'z ;: everywhere, linux is cheaper
+sam'z ; is now playing Counter-Strike. Click here to join.
+no name.. has changed their name to sleep.
+sam'z ; is now Away.
+sam'z ;: khalid, i m taking to the live chat of nashirnet.net     the saudi arabian vps
+sam'z ;: he said he has VPS
+sam'z ;: Operator 1:
+how much RAM you need ?
+sami:
+2 GB is good
+sami:
+hold on 1 minute lemme ask my friend
+Operator 1:
+ok
+Operator 1:
+but take in mind that windows alone needs 1 GB Ram
+sleep: 3ady 3ady
+sleep: bs akeed al vps f s3odiya?
+sam'z ;: i will ask now
+sam'z ;: 1 sec
+sam'z ;: i told him gimme a discout :D
+sleep: goola nba ip 3ashan test ping
+sam'z ;: rom 67 
+.99
+/ Monthly
+sam'z ;: $ 68 a month
+sam'z ;: sami:
+Where are the servers located?
+Operator 1:
+Riyadh - KSA
+sami:
+sleep: nba IP test ping
+sleep: xd
+sam'z ;: sami:
+Is there any Ip for me to test ping?
+Operator 1:
+sure 
+46.151.208.1
+sleep: roo7 3la al cmd
+sleep: b3deen ping -t 46.151.208.1
+sleep: 90 ms
+sleep: 3ndy
+sleep: bs 3ndkm km
+sam'z ;: 35
+sam'z ;: 34
+sam'z ;: 32
+sleep: nice
+sam'z ;: ~30-35 max
+sam'z ;: but i dunno the server will be lagg or no
+sleep: km sr3t al net ally b3y6oona eyaha?
+sam'z ;: 3000 gb bandwith
+sleep: mo al bandwidth
+sleep: sr3t al net mal al vps nfsa
+sam'z ;: dageega
+sam'z ;: Operator 1:
+datacenter uplink speed is 1 Gbps
+sam'z ;: sho r2yk?
+sam'z ;: Operator 1:
+VPS run at 10 Mbps
+sam'z ;: i ended the chat. i think its good
+sam'z ;: at least better than uae expensive prices
+sleep: ye
+sleep: shkly ana bft7 wa7d :P
+sam'z ;: 3 gb ram, 3 cores, 3000 bandwith, 75 gb space = 68$
+sam'z ;: thats windows
+sleep: 3 gb ram?
+sam'z ;: linux is 49$
+sleep: lw gllna al hard disk yr59?
+sleep: l2na ma a3t8d n7tag akthr mn 20
+sam'z ;: IF U Make it 2 gb ram, 2 cpu cores, 50 gb space hard disk, and 2000 bandwith = 44.75
+sam'z ;: $
+sleep: 7lo
+sleep: bs madry a9ln xdf
+sam'z ;: bs windows takes 2 much
+sam'z ;: so make 1 for windows, 2 for server
+sam'z ;: 3 cores a7sn
+sam'z ;: on my point of view
+sam'z ;: if linux, 1 core is better than enough
+sam'z ;: bs aall of us are nubs in linux
+sleep: ana shkly bbda at3lm linux a9ln
+sam'z ;: howa linux it has desktop and stuff like windows
+sam'z ;: the hard part is the cmd things
+sam'z ;: i dont know any commands and SSH is hard also
+sleep: adry adry
+sam'z ;: how many days left for dubai-gamerz?
+sleep: bagy 20 gb -.-
+sleep: ymkn alyoom y5l9o aw bachr
+sam'z ;: km Mb? el vps
+sleep: 10
+sleep: nfs al shy
+sam'z ;: same same ksa
+sam'z ;: 6yb
+sam'z ;: 35 ping wala 15 matfrg
+sam'z ;: still good
+sam'z ;: linux cheaper by ~20$
+sam'z ;: 18&
+sam'z ;: 18*
+sleep: ..

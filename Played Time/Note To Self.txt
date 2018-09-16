@@ -1,0 +1,2 @@
+Do not use client_putinserver to get time. Use client_authorized or client_connect as the client might
+disconnect before going in putinserver and the saved time on disconnect will be 0, which resets the time.

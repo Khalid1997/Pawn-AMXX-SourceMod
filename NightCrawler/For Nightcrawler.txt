@@ -1,0 +1,2 @@
+Fix Player Checker and game run checker (Same same)
+Do Kill = NC and don't change NC.

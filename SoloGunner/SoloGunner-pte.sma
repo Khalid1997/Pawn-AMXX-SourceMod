@@ -1,0 +1,617 @@
+#include <amxmodx>
+#include <amxmisc>
+#include <fun>
+#include <fakemeta>
+#include <engine>
+#include <cstrike>
+#include <nvault>
+//#include <played_time>
+
+#define PLUGIN "SoloGunner Mode"
+#define VERSION "1.0"
+#define AUTHOR "Khalid :)"
+
+#define get_user_playedtime get_user_played_time
+#define set_user_playedtime set_user_played_time
+
+native set_user_played_time(id, iTime);
+native get_user_played_time(id);
+
+/* - - - - - -  Edit Starts Here  - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+#define ADMIN_FLAG		ADMIN_BAN
+#define GOLDEN_FLAG		ADMIN_LEVEL_H
+#define SILVER_FLAG		ADMIN_LEVEL_G
+
+#define ACTIVATE_DELAY		20.0
+
+#define SOLO_AMMO		26
+#define SOLO_MODEL		"vip"
+
+// Times
+#define MINS_FOR_SOLO_KILL	5
+#define MINS_DECREMENT_SOLO_KNIFED 350	
+#define MINS_FOR_SOLO_KILLER	100
+
+#define SOLO_SUICIDE_TIME_DECREMENT	350
+#define SOLO_DISCONNECT_TIME_DECREMENT	350
+
+// Limits
+#define ADMIN_ACTIVATES 3
+#define GOLDEN_ACTIVATES 2
+#define SILVER_ACTIVATES 1
+
+/* - - - - - -  Edit Ends Here  - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+#define FINAL			(ADMIN_FLAG | SILVER_FLAG | GOLDEN_FLAG)
+#define HUD_TASKID		198612
+#define OFFSET_MAPZONES		235
+
+#define IsValidPlayer(%1)	(1 <= %1 <= g_iMaxPlayers)
+
+new bool:g_bRunning = false
+new g_iModeActivates[33], g_iSoloId
+
+new Float:g_flRoundStartGameTime
+
+new g_iSoloBullets
+
+new gMsgIdCurWeapon, gMsgStatusIcon
+
+new g_szOldModel[20]
+
+new g_iMaxPlayers
+
+//#define WITH_LIMITS
+#define LIMITS_BY_SQL
+
+#if defined WITH_LIMITS
+	#if defined LIMITS_BY_SQL
+	new Handle:g_hSql
+	#else
+	new gVault
+	#endif
+enum _:Levels
+{
+	ADMIN,
+	GOLDEN,
+	SILVER
+}
+
+new g_iActivateTimes[Levels] = {
+	ADMIN_ACTIVATES,
+	GOLDEN_ACTIVATES,
+	SILVER_ACTIVATES
+}
+#endif
+
+/* 
+The player who activates this mode becomes a Solo Gunner and the following happens:
+The solo gunner will have a knife and a USP gun with 26 bullets only.
+
+The rest of the players will only be able to carry a knife.
+
+The solo gunner shall get 5 minutes added to his/her total time on every player he/she kills. -- wait
+
+If the solo gunner gets knifed and killed, he/she will lose 350 minutes of his/her total time and a bell-like sound will be played to inform others. -- wait
+
+If a player kills a solo gunner, 100 minutes will be added to his/her total time. -- wait
+
+If the solo gunner disconnects from the server (to avoid being killed), he/she will lose 350 minutes. -- wait
+
+Solo Gunner Mode is activated for one round only. Everything would return to normal by next round.
+
+Silvers can activate this mode once per day, Goldens twice per day, and Administrators three times per day. However, to keep this mode interesting, the server will allow Solo Gunner mode to be activated a total of 3 times per map.
+*/
+
+new bool:gBlockBuyZone;
+/*
+new gBuyCommands[][] =  
+{ 
+	"usp", "glock", "deagle", "p228", "elites", "fn57", "m3", "xm1014", "mp5", "tmp", "p90", "mac10", "ump45", "ak47",  
+	"galil", "famas", "sg552", "m4a1", "aug", "scout", "awp", "g3sg1", "sg550", "m249", "vest", "vesthelm", "flash", "hegren", 
+	"sgren", "defuser", "nvgs", "shield", "primammo", "secammo", "km45", "9x19mm", "nighthawk", "228compact", "12gauge", 
+	"autoshotgun", "smg", "mp", "c90", "cv47", "defender", "clarion", "krieg552", "bullpup", "magnum", "d3au1", "krieg550", 
+	"buyammo1", "buyammo2" 
+} */
+
+public plugin_precache()
+{
+	new szFile[60]
+	formatex(szFile, charsmax(szFile), "models/player/%s/%s.mdl", SOLO_MODEL, SOLO_MODEL)
+	
+	precache_model(szFile)
+	
+	precache_sound("bell.wav")
+}
+
+public plugin_init()
+{
+	register_plugin(PLUGIN, VERSION, AUTHOR)
+	
+	register_concmd("amx_solo", "AdminActivate", FINAL)
+	register_concmd("amx_reset_times", "AdminResetTimes", ADMIN_RCON, "<name> - Resets current mod activates")
+	
+	//for(new i; i < sizeof(gBuyCommands); i++)
+	//	register_clcmd(gBuyCommands[i], "BuyBlock")
+	
+	register_touch("weaponbox", "player", "fw_BlockWeaponPickUp")
+	register_touch("armoury_entity", "player", "fw_BlockWeaponPickUp")
+	
+	register_forward(FM_SetClientKeyValue, "fw_SetClientKeyValue")
+	
+	register_event("CurWeapon", "eCurWeapon", "b", "1=1")
+	register_event("HLTV", "eNewRound", "a", "1=0", "2=0")
+	register_event("DeathMsg", "eDeath", "a")
+	register_logevent("RoundEnd", 2, "1=Round_End")
+	
+	register_message(get_user_msgid("StatusIcon"), "message_StatusIcon")
+	
+	gMsgIdCurWeapon = get_user_msgid("CurWeapon")
+	gMsgStatusIcon = get_user_msgid("StatusIcon")
+	
+	g_iMaxPlayers = get_maxplayers()
+	
+	#if defined WITH_LIMITS
+	// I was lazy to use files, nvault is faster and easier :D
+	
+	#if !defiend LIMITS_BY_SQL
+	gVault = nvault_open("SoloUses")
+	
+	if(gVault == INVALID_HANDLE)
+		set_fail_state("Couldn't open Solo Activates vault file")
+		
+	new szCurrentDay[6], szVaultDay[6], iSysTime
+	format_time(szCurrentDay, charsmax(szCurrentDay), "%j", (iSysTime = get_systime()))
+	
+	nvault_get(gVault, "day", szVaultDay, charsmax(szVaultDay))
+	
+	if(!equal(szCurrentDay, szVaultDay))
+	{
+		nvault_prune(gVault, 0, iSysTime + 28)
+		nvault_remove(gVault, "day")
+		nvault_set(gVault, "day", szCurrentDay)
+		
+		log_amx("The day has changed! Resseting Ghost Activates")	
+	}
+	
+	#else
+	
+	#endif
+	#endif
+	
+	server_print("*** SoloGunner mode has been loaded successfully!")
+	server_print("*** Contact me on my steam account incase of any problem ( My account is: pokemonmaster199714)")
+}
+
+/*
+public BuyBlock(id)
+{
+	if(g_bRunning)
+	{
+		return PLUGIN_HANDLED
+	}
+	return PLUGIN_CONTINUE
+}*/
+
+public plugin_end()
+{
+	#if defined WITH_LIMITS
+		#if !defined LIMITS_BY_SQL
+			nvault_close(gVault)
+		#else
+			
+		#endif
+	#endif
+}
+
+public client_putinserver(id)
+{
+	#if defined WITH_LIMITS
+	if(get_user_flags(id) & FINAL)
+	{
+		g_iModeActivates[id] = LoadUses(id)
+	}
+	#endif
+}
+
+public client_disconnect(id)
+{
+	if(g_bRunning && id == g_iSoloId)
+	{
+		set_user_playedtime(id, get_user_playedtime(id) - ( SOLO_DISCONNECT_TIME_DECREMENT * 60 ) )
+	}
+	
+	#if defined WITH_LIMITS
+	if(get_user_flags(id) & FINAL)
+	{
+		SaveUses(id)
+	}
+	#endif
+}
+
+public AdminResetTimes(id, level, cid)
+{
+	if(!cmd_access(id, level, cid, 2))
+		return PLUGIN_HANDLED
+		
+	static szArg[32]
+	read_argv(1, szArg, charsmax(szArg))
+	
+	new iPlayer = cmd_target(id, szArg, CMDTARGET_ALLOW_SELF)
+	
+	if(szArg[0] == '*' && !szArg[1])
+	{
+		console_print(id, "Resseted Solo Activates for this day for all connected players (admin\golden\silver)")
+		
+		arrayset(g_iModeActivates, 0 , sizeof(g_iModeActivates))
+		
+		return PLUGIN_HANDLED
+	}
+	
+	if(!iPlayer)
+	{
+		console_print(id, "Player could not be found")
+		return PLUGIN_HANDLED
+	}
+	
+	get_user_name(iPlayer, szArg, charsmax(szArg))
+	g_iModeActivates[id] = 0
+	
+	console_print(id, "Resseted SoloGunner Activates for player %s", szArg)
+	return PLUGIN_HANDLED
+}
+	
+public AdminActivate(id, level, cid)
+{
+	if(!cmd_access(id, level, cid, 1))
+		return PLUGIN_HANDLED
+		
+	if(g_bRunning)
+	{
+		console_print(id, "** Mode is already running")
+		return PLUGIN_HANDLED
+	}
+	
+	if(!is_user_alive(id))
+	{
+		console_print(id, "** You must be alive to activate the mode")
+		return PLUGIN_HANDLED
+	}
+	
+	new iFlags = get_user_flags(id)
+	
+	#if defined WITH_LIMITS
+	if(!CanActivate(id, iFlags))
+	#else
+	if(!CanActivate(id))
+	#endif
+	{
+		return PLUGIN_HANDLED
+	}
+
+	g_bRunning = true; g_iSoloId = id
+	
+	new iPlayers[32], iNum, iPlayer
+	get_players(iPlayers, iNum, "ach")
+	
+	for(new i; i < iNum; i++)
+	{
+		iPlayer = iPlayers[i]
+		strip_user_weapons(iPlayer)
+		
+		give_item(iPlayer, "weapon_knife")
+		
+		if(iPlayer == id)
+		{
+			give_item(iPlayer, "weapon_usp")
+			cs_set_user_bpammo(iPlayer, CSW_USP, SOLO_AMMO)
+			
+			get_user_model(iPlayer, g_szOldModel, charsmax(g_szOldModel))
+			set_user_model(iPlayer, SOLO_MODEL)
+		}
+	}
+	
+	new szName[32]
+	get_user_name(id, szName, charsmax(szName))
+	
+	console_print(id, "*** You have activated SoloGunner Mode")
+	
+	client_print(id, print_chat, "*** You have activated SoloGunner! You are the SoloGunner")
+	client_print(id, print_chat, "*** On each kill you make you will be rewarded with %d minutes.", MINS_FOR_SOLO_KILL)
+	
+	client_print(0, print_chat, "*** Everyone will be able to carry knife.")
+	client_print(0, print_chat, "*** Next round everything will be back to normal.")
+	
+	new szLevel[60] 
+	copy(szLevel, charsmax(szLevel), ( iFlags & ADMIN_FLAG ? "Administrator " : ( iFlags & GOLDEN_FLAG ? "Golden Player " : "Silver Player " ) ) )
+	add(szLevel, charsmax(szLevel), szName)
+	
+	set_task(0.1, "ShowHud", HUD_TASKID, szLevel, charsmax(szLevel), "b")
+	
+	++g_iModeActivates[id]
+	
+	BlockBuyZones()
+	
+	return PLUGIN_HANDLED
+}
+
+public fw_BlockWeaponPickUp(iTouched, iToucher)
+	return g_bRunning ? PLUGIN_HANDLED : PLUGIN_CONTINUE
+
+// Thanks to MeRcyLeZZ for model change stuff
+public fw_SetClientKeyValue( id, const infobuffer[], const key[] )
+{
+	if(!g_bRunning)
+		return FMRES_IGNORED
+	
+	if ( id == g_iSoloId && equal( key, "model" ) )
+	{
+		static szCurrentModel[32]
+		get_user_model( id, szCurrentModel, charsmax( szCurrentModel ) )
+		
+		if ( !equal( szCurrentModel, "vip" ) )
+			set_user_model( id, "vip")
+		
+		return FMRES_SUPERCEDE;
+	}
+	    
+	return FMRES_IGNORED;
+}
+	
+public eNewRound()
+{
+	g_flRoundStartGameTime = get_gametime()
+}
+	
+public eCurWeapon(id)
+{
+	if(!is_user_alive(id) || !g_bRunning)
+		return;
+	
+	new iWeaponId = read_data(2)
+	
+	if(id != g_iSoloId )
+	{
+		if(iWeaponId != CSW_KNIFE)
+		{
+			// Just in case
+			engclient_cmd(id, "weapon_knife")
+			
+			message_begin(MSG_ONE, gMsgIdCurWeapon,_, id)
+			write_byte(1)
+			write_byte(CSW_KNIFE)
+			write_byte(-1)
+			message_end()
+		}
+		
+		return;
+	}
+	
+	g_iSoloBullets = ( iWeaponId == CSW_USP ? read_data(3) + cs_get_user_bpammo(id, CSW_USP) : -1 )
+}
+
+public RoundEnd()
+{
+	g_bRunning = false
+	set_user_model(g_iSoloId, g_szOldModel)
+	
+	UnblockBuyZones()
+}
+
+public eDeath()
+{
+	if(!g_bRunning)
+		return;
+	
+	new iKiller = read_data(1)
+	new iVictim = read_data(2)
+	
+	new szWeapon[25]
+	
+	read_data(4, szWeapon, charsmax(szWeapon))
+	
+	static szName[32]; get_user_name(iKiller, szName, charsmax(szName))
+	
+	// Solo killed someone
+	if(iKiller == g_iSoloId && iVictim != g_iSoloId)
+	{
+		client_print(0, print_chat, "** %d minutes were added to %s for killing", MINS_FOR_SOLO_KILL, szName)
+		set_user_playedtime(iKiller, get_user_playedtime(iKiller) + ( MINS_FOR_SOLO_KILL * 60 ) )
+	}
+	
+	// Suicide
+	else if( (!iKiller || !IsValidPlayer(iKiller) || iKiller == iVictim) && iVictim == g_iSoloId )
+	{
+		client_print(0, print_chat, "** %d minutes have been taken from %s for suiciding", SOLO_SUICIDE_TIME_DECREMENT, szName)
+		set_user_playedtime(iVictim, get_user_playedtime(iVictim) - (60 * SOLO_SUICIDE_TIME_DECREMENT) )
+	}
+	
+	// Someone killed solo
+	else if( iKiller != iVictim && iVictim == g_iSoloId && IsValidPlayer(iKiller) )
+	{	
+		// Play bell sound
+		client_cmd(0, "spk ^"bell^"")
+			
+		client_print(g_iSoloId, print_chat, "** %d minutes have been taken from you for being knifed and killed", MINS_DECREMENT_SOLO_KNIFED)
+		set_user_playedtime(iVictim, get_user_playedtime(iVictim) - ( 60 * MINS_DECREMENT_SOLO_KNIFED ) )
+		
+		client_print(0, print_chat, "** %d minutes were added to %s for knifing SoloGunner", MINS_FOR_SOLO_KILLER, szName)
+		set_user_playedtime(iKiller, get_user_playedtime(iKiller) + ( 60 * MINS_FOR_SOLO_KILLER) )
+	}
+}
+
+public ShowHud(szFlag[], iTaskId)
+{
+	if(!g_bRunning)
+	{
+		remove_task(iTaskId)
+		return;
+	}
+	
+	set_hudmessage(255, 255, 0, -1.0, 0.20, 0, 0.0, 0.1, 0.0, 0.1)
+	
+	static szBullets[24]
+	if(g_iSoloBullets == -1)
+	{
+		szBullets = "Hidden"
+	}
+	
+	else
+	{
+		formatex(szBullets, charsmax(szBullets), "%d", g_iSoloBullets)
+	}
+	
+	show_hudmessage(0, "Solo Gunner is activated by %s^nBullets remaining: %s", szFlag, szBullets )
+}
+
+#if defined WITH_LIMIT
+LoadUses(id)
+{
+	static szAuthId[33]; get_user_authid(id, szAuthId, charsmax(szAuthId))
+	
+	#if !defined LIMITS_BY_SQL
+	static szUses[4], iTimeStamp
+	
+	if(nvault_lookup(gVault, szAuthId, szUses, charsmax(szUses), iTimeStamp))
+	{
+		return str_to_num(szUses)
+	}
+	#else
+		
+	#endif
+	
+	
+	return 0
+}
+
+SaveUses(id)
+{
+	static szAuthId[33]; get_user_authid(id, szAuthId, charsmax(szAuthId))
+	
+	#if defined LIMITS_BY_SQL
+		
+	static szUses[4]
+	nvault_remove(gVault, szAuthId)
+	formatex(szUses, charsmax(szUses), "%d", g_iModeActivates[id])
+	nvault_set(gVault, szAuthId, szUses)
+	#else
+		
+	#endif
+}
+#endif
+
+#if defined WITH_LIMITS
+CanActivate(id, iFlags)
+#else
+CanActivate(id)
+#endif
+{
+	if(get_gametime() - g_flRoundStartGameTime > ACTIVATE_DELAY)
+	{
+		console_print(id, "** Mode connot be activated as more than %f seconds passed since round start", ACTIVATE_DELAY)
+		return 0
+	}
+	
+	#if defined WITH_LIMITS
+	if( g_iModeActivates[id] >= g_iActivateTimes[get_level(iFlags)] )
+	{
+		console_print(id, "** You have exceeded the SoloGunner mode activates for this day")
+		return 0
+	}
+	#endif
+	
+	return 1
+}
+
+#if defined WITH_LIMITS
+get_level(iFlags)
+{
+	if(iFlags & ADMIN_FLAG)
+		return ADMIN
+		
+	if(iFlags & GOLDEN_FLAG)
+		return GOLDEN
+		
+	if(iFlags & SILVER_FLAG)
+		return SILVER
+		
+	return 0
+}
+#endif
+
+// Thanks to MeRcyLeZZ for model change stuff
+stock set_user_model( player, const modelname[] )
+{
+	engfunc( EngFunc_SetClientKeyValue, player, engfunc( EngFunc_GetInfoKeyBuffer, player ), "model", modelname )
+}
+
+stock get_user_model( player, model[], len )
+{
+	engfunc( EngFunc_InfoKeyValue, engfunc( EngFunc_GetInfoKeyBuffer, player ), "model", model, len )
+}
+
+public message_StatusIcon(msgID, dest, receiver) {
+	// Check if status is to be shown
+	if(gBlockBuyZone && get_msg_arg_int(1)) {
+		
+		new const buyzone[] = "buyzone";
+		
+		// Grab what icon is being shown
+		new icon[sizeof(buyzone) + 1];
+		get_msg_arg_string(2, icon, charsmax(icon));
+		
+		// Check if buyzone icon
+		if(equal(icon, buyzone)) {
+			
+			// Remove player from buyzone
+			RemoveFromBuyzone(receiver);
+			
+			// Block icon from being shown
+			set_msg_arg_int(1, ARG_BYTE, 0);
+		}
+	}
+	return PLUGIN_CONTINUE;
+}
+
+BlockBuyZones()
+{
+	// Hide buyzone icon from all players
+	message_begin(MSG_BROADCAST, gMsgStatusIcon);
+	write_byte(0);
+	write_string("buyzone");
+	message_end();
+	
+	// Get all alive players
+	new players[32], pnum;
+	get_players(players, pnum, "a");
+	
+	// Remove all alive players from buyzone
+	while(pnum-- > 0)
+	{
+		RemoveFromBuyzone(players[pnum]);
+	}
+	// Set that buyzones should be blocked
+	gBlockBuyZone = true;
+}
+
+RemoveFromBuyzone(id)
+{
+	// Define offsets to be used
+	const m_fClientMapZone = 235;
+	const MAPZONE_BUYZONE = (1 << 0);
+	const XO_PLAYERS = 5;
+	
+	// Remove player's buyzone bit for the map zones
+	set_pdata_int(id, m_fClientMapZone, get_pdata_int(id, m_fClientMapZone, XO_PLAYERS) & ~MAPZONE_BUYZONE, XO_PLAYERS);
+}
+
+UnblockBuyZones()
+{
+	// Set that buyzone should not be blocked
+	gBlockBuyZone = false;
+}
+
+/* AMXX-Studio Notes - DO NOT MODIFY BELOW HERE
+*{\\ rtf1\\ ansi\\ deff0{\\ fonttbl{\\ f0\\ fnil Tahoma;}}\n\\ viewkind4\\ uc1\\ pard\\ lang2057\\ f0\\ fs16 \n\\ par }
+*/

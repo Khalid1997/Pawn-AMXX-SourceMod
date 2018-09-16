@@ -1,0 +1,47 @@
+Change this:
+
+public goto_nextmap()
+{
+	new mapCycleFile[64];
+	get_gg_mapcycle_file(mapCycleFile,63);
+
+	// no gungame mapcycle
+	if(!mapCycleFile[0] || !file_exists(mapCycleFile))
+	{
+		new custom[256];
+		get_pcvar_string(gg_changelevel_custom,custom,255);
+
+		// try custom changelevel command
+		if(custom[0])
+		{
+			server_cmd(custom);
+			return;
+		}
+	}
+	
+	if(galileoID != -1)
+	{
+		if(callfunc_begin_i(get_func_id("map_change",galileoID),galileoID) == 1)
+		{
+			callfunc_end();
+			return;
+		}
+	}
+
+	// otherwise, go to amx_nextmap
+	new nextMap[32];
+	get_cvar_string("amx_nextmap",nextMap,31);
+
+	server_cmd("changelevel %s",nextMap);
+}
+
+
+TO:
+
+
+// go to amx_nextmap
+public goto_nextmap()
+{
+	server_cmd("amx_votemod")
+}
+

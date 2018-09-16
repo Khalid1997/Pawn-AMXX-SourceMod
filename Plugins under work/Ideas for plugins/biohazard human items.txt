@@ -1,0 +1,51 @@
+biohmitems.amxx|sma
+
+Biohazard Mod 
+
+__________________
+
+Discreption : 
+
+Well Cant You See That The Zombies Have The Right To Change Zombies But The Humans CAnt Chnage humans or buy items , well i had this idea and i said why not :P
+
+__________________
+
+The Items : 
+
+1-Unlimited Clip ( 50 AP )
+2-Noclip ( 75 AP )
+3-100 Armor ( 15 AP )
+4-Multijump ( 25 AP )  
+5-Grenades Menu ( 30 AP )
+
+___________________
+
+Cvars 
+
+amx_cvar bio_hmitems "1" / 1 = on , 2 = off
+amx_cvar bio_noclip "5" / How Many Seconds Till Its Over
+amx_cvar bio_unlimitedclip "1" / How Many Rounds Till Its over
+amx_cvar bio_armor "1" / 1 = 1 round then its back to 0 , 2 = round finishs and still 100 armor
+amx_cvar bio_jetpack "10" / How Many Seconds Till Its Over
+amx_cvar bio_multijumphm "4" / How Many Jumps Can He Jump
+
+____________________
+
+Commands :
+
+/items / Opens up the items store
+/myap / Shows how much ammo packs does he have
+
+____________________
+
+Admin Commands :
+
+/giveap / gives a player ammo packs
+/takeap / Take from a player ammo packs
+
+_____________________
+
+Credits :
+
+pokemonmaster : Creator Of Plugin
+Haider99xD : Idea of plugin

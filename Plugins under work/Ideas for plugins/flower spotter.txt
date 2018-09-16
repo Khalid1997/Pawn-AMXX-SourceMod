@@ -1,0 +1,37 @@
+flower_spotter.amxx|sma
+
+Flower Mod 
+_______________
+
+Discreption : 
+
+This Plugin Is So Amazing It Can Spot The Flowers Places With A small Distance , But It Cant Spot The Far Flowers , Just The Near Flowers , but u can change it anyway ,  and btw the flowers can be spotted only in the radar we can see them
+
+________________
+
+Cvars : 
+
+amx_cvar fm_fp "1" / 1 = on , 2 = off
+amx_cvar fp_distance "2" / 1 = Far Flowers  , 2 = Near Flowers
+amx_cvar fp_radaron "1" / The Flowers Can Be Spotted In The Radar , 1 = radar , 2 = normal
+amx_cvar fp_cost "16000" / Costs To Buy 16000$
+
+_________________
+
+Commands :
+
+/fp / Costs 16000$
+
+
+_________________
+
+Admin Commands :
+
+/fpradar / admins can change the cvar to with radar or normal
+
+_________________
+
+Credits : 
+
+pokemonmaster : Creator of plugin
+Haider99xD : idea of plugin

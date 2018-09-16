@@ -1,0 +1,41 @@
+This menu contains 8 weapons, which an admin can choose from.
+When an admin chooses a weapon, it will be activated next round.
+When the chosen round finish, everything will return back to normal.
+
+Buy is blocked! Also, a user can only use the weapon of the round that the admin chose.
+
+Currently no pictures are provided, I will try to upload some later.
+
+Please report any bugs, so it can be fixed immediately.
+
+You can change round messages in the source code to whatever you want.
+
+[color=#00BF00]New cvar from version 1.5![/color]
+[code]rounds_menu_hudmessage          // 0=Chat message   1=HudMessage
+                                // Default value "0"[/code]
+
+[color=#40BF00]To edit the HudMessage colors, just open the source code, and edit this:[/color]
+[code=PHP]#define COLOR_R    255
+#define COLOR_G    0
+#define COLOR_B    0
+[/code]
+
+
+[color=#00BF00][size=150]Requirments:[/size][/color]
+[code=PHP]
+#include <amxmodx>
+#include <fun>
+#include <fakemeta>
+#include <cstrike>
+[/code]
+
+[code]Change log:
+1.0 Initial release.
+1.5  +New cvar to switch from hudmessage or chat message
+     +Now you can change the color of the hudmessage easily from the defines.[/code]
+
+Credits:
+*** Me, making all the code.
+*** Exolent, for the buy block code.
+
+.amxx file attached :)
