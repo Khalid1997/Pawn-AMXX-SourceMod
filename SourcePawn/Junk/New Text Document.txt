@@ -1,0 +1,4 @@
+Bandwidth for Server in Mbit * 1000 Kbit * 1000 bit / 8 Byte = Bandwith in Byte
+
+sv_maxrate = Bandwith in Byte / Server slots
+sv_maxupdaterate = sv_maxrate / 300

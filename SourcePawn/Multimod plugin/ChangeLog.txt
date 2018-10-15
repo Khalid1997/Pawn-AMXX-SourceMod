@@ -1,0 +1,59 @@
+Changelog:
+* Version 1.0
+- My initial plugin and test.
+
+* Version 1.5
+- Added the Multimod Menu.
+
+* Version 1.5.1
+- Fixed voting and block mod system!
+
+* Version 1.5.2
+- A Canceled vote due to no votes will now randomize next mod and map.
+- Added Multimod menu vote start functionality.
+- Fixed ShowActivity Error in sm_nextmod.
+- Fixed ChangePlugins not moving current mod plugins to it's disabled folder on server shutdown/quit
+- Fixed an issue that if server had no mods, it would keep restarting it self.
+- Fixed sm_mm_reload (although I highly do not recommend using it).
+- Improved plugin changing functionality a bit (Now the plugin won't move current mod's plugins twice on map change)
+- current mod and nextmod chat commands now do not need ! mark
+- Added RTV sub-plugin!
+	- RTV plugin is a modified version of the sourcemod defualt rtv plugin.
+	- It contains all cvars except sm_rtv_interval
+
+* Version 1.5.3
+- Moved the entire voting functionality to the voting plugin (except rockthevote).
+- Added native MultiMod_StartVote
+- Added Forward MultiMod_VotingStarted
+- Changed g_bModVotingStarted to g_bVotingStarted in rockthevote_mm
+- Fixed rockthevote_mm chat.
+
+* Version 1.6a
+- Functions are now split. Each plugin takes care of its own functionallity and can run indepently (but without the base multimod plugin ofc)
+	So now, voting.smx, multimod.smx are split to four plugins:
+		. multimod.smx			(Base. none of the others can run without it. This connot run indepently atm. The next update will allow it to).
+		. multimod_vote.smx		(Handles voting)
+		. multimod_menu.smx		(Handles the multimod menu)
+		. multimod_nextcurrentmod.smx	(Handles currentmod and nextmod chat commands)
+- IMPORTANT: Added command sm_startvote to the voting plugin. Type sm_startvote "help" in console for more info.
+- IMPORTANT: Added a new block method, Block & Save. Choosing this will keep the blocking on the MOD even after map change.
+- IMPORTANT: You can now edit MM_DEFAULT_FORCE_CHANGE in multimod_const.inc (Requires recompiling multimod_vote plugin)
+		This detemines whether the voting plugin will change mod immidiately after the vote is done, or it should wait for the map end.
+- Includes are now split to four:
+		. multimod.inc			(Contains base natives like choosing next MOD, getting MOD prop, etc)
+		. multimod_vote.inc		(Contains voting natives)
+		. multimod_const.inc		(Contains constants that most\all plugins use, any change might require recompiling ALL plugins)
+		. multimod_stocks.inc		(Contains stocks used in all plugins. It is only MM_PrintToChat for now :P)
+- Added natives:
+	# Base Plugin:
+		. MultiMod_GetModLock, MultiMod_SetModLock, MultiMod_GetLockedModsCount
+		. MultiMod_SetNextMod
+		. MultiMod_IsLoaded
+	# Voting Plugin:
+		. MultiMod_StartVote
+- Added forwards:
+	# Base Plugin:
+		. MultiMod_NextModChanged
+		. MultiMod_Loaded
+	# Voting Plugin:
+		. MultiMod_VotingStarted

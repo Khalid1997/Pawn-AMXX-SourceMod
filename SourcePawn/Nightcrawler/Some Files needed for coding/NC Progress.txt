@@ -1,0 +1,4 @@
+sv_footsteps
+Fix Bar Detector
+Fix Grenade count
+Fix First round not choosing a player

@@ -1,0 +1,457 @@
+﻿"Phrases"
+{
+	"Shop"
+	{		
+		"#format"	"{1:d}"
+		"en"		"Jail Shop. Yours credits: {1}"
+	}
+	
+	"Invisivel"
+	{		
+		"#format"	"{1:d}"
+		"en"		"Be invisible for 10 seconds - {1} credits"
+	}
+	
+	"AWP"
+	{		
+		"#format"	"{1:d}"
+		"en"		"Buy a AWP with 1 bullet - {1} credits"
+	}
+	
+	"Imortal"
+	{			
+		"#format"	"{1:d}"
+		"en"		"Immortal for 20 seconds - {1} credits"
+	}
+	
+	"Jail"
+	{		
+		"#format"	"{1:d}"
+		"en"		"Open Jails - {1} credits"
+	}
+	
+	"Rapido"
+	{		
+		"#format"	"{1:d}"
+		"en"		"Be more fast + vampire - {1} credits"
+	}
+	
+	"HP"
+	{		
+		"#format"	"{1:d}"
+		"en"		"Ter +150 hp + helm - {1} credits"
+	}
+	
+	"Eagle"
+	{		
+		"#format"	"{1:d}"
+		"en"		"Buy a Eagle with 7 bullets - {1} credits"
+	}
+	
+	"Super"
+	{		
+		"#format"	"{1:d}"
+		"en"		"Buy a SUPER KNIFE - {1} credits"
+	}	
+	
+	"Cura"
+	{		
+		"#format"	"{1:d}"
+		"en"		"Healing - {1} credits"
+	}
+	
+	"Molotov"
+	{		
+		"#format"	"{1:d}"
+		"en"		"Buy a molotov + 2 flashs - {1} credits"
+	}
+	
+	"2flash"
+	{		
+		"#format"	"{1:d}"
+		"en"		"Buy a 2 flashs - {1} credits"
+	}
+	
+	"Skin"
+	{		
+		"#format"	"{1:d}"
+		"en"		"Imposer (Guard) - {1} credits"
+	}
+	
+	"Smoke"
+	{		
+		"#format"	"{1:d}"
+		"en"		"Poison smoke - {1} credits"
+	}
+	
+	"Bhop"
+	{		
+		"#format"	"{1:d}"
+		"en"		"Have BunnyHop - {1} credits"
+	}
+	
+	"HE"
+	{		
+		"#format"	"{1:d}"
+		"en"		"Buy a HE burned - {1} credits"
+	}
+	
+	"Gravity"
+	{		
+		"#format"	"{1:d}"
+		"en"		"Low gravity - {1} credits"
+	}
+	
+	"Teletransportadora3"
+	{		
+		"#format"	"{1:d}"
+		"en"		"Buy a Smoke Teleporter - {1} credits"
+	}
+	
+	"Taser"
+	{		
+		"#format"	"{1:d}"
+		"en"		"Comprar Taser - {1} creditos"
+	}
+	
+	"Kedavra"
+	{		
+		"#format"	"{1:d}"
+		"en"		"Avada Kedavra - {1} creditos"
+	}
+
+	
+	"Item da teletransportadora"
+	{
+		"#format" 	"{1:d},{2:d}"
+		"en" 		"Your credits: {1} (You not have sufficient credits to buy this item! Need: {2})"
+	}
+	
+	"Item da gravidade"
+	{
+		"#format" 	"{1:d},{2:d}"
+		"en" 		"Your credits: {1} (You not have sufficient credits to buy this item! Need: {2})"
+	}
+	
+	"Item da he2"
+	{
+		"#format" 	"{1:d},{2:d}"
+		"en" 		"Your credits: {1} (You not have sufficient credits to buy this item! Need: {2})"
+	}
+	
+	"Item da taser"
+	{
+		"#format" 	"{1:d},{2:d}"
+		"en" 		"Seus creditos: {1} (Voce nao tem creditos suficientes para comprar este item! Voce precisa de: {2})"
+	}
+	
+	"Item do poder"
+	{
+		"#format" 	"{1:d},{2:d}"
+		"en" 		"Seus creditos: {1} (Voce nao tem creditos suficientes para comprar este item! Voce precisa de: {2})"
+	}	
+	
+	"Item do bhop"
+	{
+		"#format" 	"{1:d},{2:d}"
+		"en" 		"Your credits: {1} (You not have sufficient credits to buy this item! Need: {2})"
+	}
+	
+	"Teletransportadora"
+	{
+		"#format" 	"{1:d},{2:d}"
+		"en" 		"You just buy a: Teleporter Smoke! ( -{2} ). Your credits:{1})"
+	}
+	
+	"HE2"
+	{
+		"#format" 	"{1:d},{2:d}"
+		"en" 		"You just buy a: HE that burn the enemy! ( -{2} ). Your credits:{1})"
+	}
+	
+	"Smoke2"
+	{
+		"#format" 	"{1:d},{2:d}"
+		"en" 		"You just buy a: Poison Smoke! ( -{2} ). Your credits:{1})"
+	}
+	
+	"Skin2"
+	{
+		"#format" 	"{1:d},{2:d}"
+		"en" 		"Now you're a imposer, be careful! ( -{2} ). Your credits:{1}"
+	}
+	
+	"Molotov2"
+	{
+		"#format" 	"{1:d},{2:d}"
+		"en" 		"You just buy a: molotov! ( -{2} ). Your credits:{1}"
+	}
+	
+	"Curar2"
+	{
+		"#format" 	"{1:d},{2:d}"
+		"en" 		"You just healing! ( -{2} ). Your credits:{1}"
+	}
+
+	"Super2"
+	{
+		"#format" 	"{1:d},{2:d}"
+		"en" 		"You just buy a: SUPER KNIFE! ( -{2} ). Your credits:{1}"
+	}
+	
+	"Eagle2"
+	{
+		"#format" 	"{1:d},{2:d}"
+		"en" 		"You just buy a: Eagle with 7 bullets! ( -{2} ). Your credits:{1}"
+	}
+	
+	"HP2"
+	{
+		"#format" 	"{1:d},{2:d}"
+		"en" 		"Now you have +150 of HP + helm! ( -{2} ). Your credits:{1}"
+	}
+	
+	"Rapido2"
+	{
+		"#format" 	"{1:d},{2:d}"
+		"en" 		"Now you're a fast vampire! ( -{2} ). Your credits:{1}"
+	}
+	
+	"Jails2"
+	{
+		"#format" 	"{1:d},{2:d}"
+		"en" 		"You just open the doors! ( -{2} ). Your credits:{1}"
+	}
+	
+	"Imortal2"
+	{
+		"#format" 	"{1:d},{2:d}"
+		"en" 		"Now you're immortal for 20 seconds! ( -{2} ). Your credits:{1}"
+	}
+	
+	"Gravity2"
+	{
+		"#format" 	"{1:d},{2:d}"
+		"en" 		"Now you have LOW GRAVITY! ( -{2} ). Your credits:{1}"
+	}
+	
+	"AWP2"
+	{
+		"#format" 	"{1:d},{2:d}"
+		"en" 		"You just buy a: AWP with one bullet, know use it! ( -{2} ). Your credits:{1}"
+	}
+	
+	"Bhop2"
+	{
+		"#format" 	"{1:d},{2:d}"
+		"en" 		"Now you have BunnyHop, have fun! ( -{2} ). Your credits:{1}"
+	}
+	
+	"Taser2"
+	{
+		"#format" 	"{1:d},{2:d}"
+		"en" 		"Agora voce tem uma taser com 3 tiros! ( -{2} ). Seus creditos:{1}"
+	}
+	
+	"Kedavra2"
+	{
+		"#format" 	"{1:d},{2:d}"
+		"en" 		"Agora voce o poder do AVADA KEDAVRA! ( -{2} ). Seus creditos:{1}"
+	}
+	
+	"Invisivel2"
+	{
+		"#format" 	"{1:d},{2:d}"
+		"en" 		"Now you're invisble for 10 seconds! ( -{2} ). Your credits:{1}"
+	}
+	
+	"Item do passaro"
+	{
+		"#format" 	"{1:d},{2:d}"
+		"en" 		"Your credits: {1} (You not have sufficient credits to buy this item! Need: {2})"
+	}
+	
+	"Item da smoke"
+	{
+		"#format" 	"{1:d},{2:d}"
+		"en" 		"Your credits: {1} (You not have sufficient credits to buy this item! Need: {2})"
+	}
+	
+	"Item da skin"
+	{
+		"#format" 	"{1:d},{2:d}"
+		"en" 		"Your credits: {1} (You not have sufficient credits to buy this item! Need: {2})"
+	}
+	
+	"Item da molotov"
+	{
+		"#format" 	"{1:d},{2:d}"
+		"en" 		"Your credits: {1} (You not have sufficient credits to buy this item! Need: {2})"
+	}
+	
+	"Item de curar"
+	{
+		"#format" 	"{1:d},{2:d}"
+		"en" 		"Your credits: {1} (You not have sufficient credits to buy this item! Need: {2})"
+	}
+	
+	"Item da super faca"
+	{
+		"#format" 	"{1:d},{2:d}"
+		"en" 		"Your credits: {1} (You not have sufficient credits to buy this item! Need: {2})"
+	}
+	
+	"Item da eagle"
+	{
+		"#format" 	"{1:d},{2:d}"
+		"en" 		"Your credits: {1} (You not have sufficient credits to buy this item! Need: {2})"
+	}
+	
+	"Item da vida"
+	{
+		"#format" 	"{1:d},{2:d}"
+		"en" 		"Your credits: {1} (You not have sufficient credits to buy this item! Need: {2})"
+	}
+	
+	"Item rapido"
+	{
+		"#format" 	"{1:d},{2:d}"
+		"en" 		"Your credits: {1} (You not have sufficient credits to buy this item! Need: {2})"
+	}
+	
+	"Item jails"
+	{
+		"#format" 	"{1:d},{2:d}"
+		"en" 		"Your credits: {1} (You not have sufficient credits to buy this item! Need: {2})"
+	}
+	
+	"Item imortal"
+	{
+		"#format" 	"{1:d},{2:d}"
+		"en" 		"Your credits: {1} (You not have sufficient credits to buy this item! Need: {2})"
+	}
+	
+	"Item awp"
+	{
+		"#format" 	"{1:d},{2:d}"
+		"en" 		"Your credits: {1} (You not have sufficient credits to buy this item! Need: {2})"
+	}
+	
+	"MaximoAWP"
+	{
+		"en" 		"You already buy a AWP in this round, wait the next for buy again!"
+	}
+	
+	"MaximoEAGLE"
+	{
+		"en" 		"You already buy a Eagle in this round, wait the next for buy again!"
+	}
+	
+	
+	"Item invisivel"
+	{
+		"#format" 	"{1:d},{2:d}"
+		"en" 		"Your credits: {1} (You not have sufficient credits to buy this item! Need: {2})"
+	}
+	
+	"Item Reviver"
+	{
+		"#format" 	"{1:d},{2:d}"
+		"en" 		"Your credits: {1} (You not have sufficient credits to buy this item! Need: {2})"
+	}
+	
+	"Vivo"
+	{
+		"en" 	"You need to be alive for buy items!"
+	}
+	
+	"Morto"
+	{
+		"en" 	"You need to be dead for buy this item"
+	}
+	
+	"Visivel novamente"
+	{
+		"en" 	"Now you're visible again!"
+	}
+	
+	"Mortal3"
+	{
+		"en" 	"Now you're mortal again!"
+	}
+	
+	"Kill"
+	{
+		"en" 	"Kill to win credits."
+	}
+	
+	"Type"
+	{
+		"en" 	"Type !shop to open the Shop Menu."
+	}
+	
+	"Creditos"
+	{
+		"#format" 	"{1:d}"
+		"en" 	"Your credits in this shop are: {1}!"
+	}
+	
+	"Maximo"
+	{
+		"#format" 	"{1:d}"
+		"en" 	"Your credits no shop de itens: {1}, Maximum allowed!"
+	}
+	
+	"Reviver4"
+	{
+		"#format" 	"{1:d}"
+		"en" 	"You die and can type !revive for {1} credits!"
+	}
+	"Item reviver"
+	{
+		"#format" 	"{1:d},{2:d}"
+		"en" 		"Your credits: {1} (You not have sufficient credits to buy this item! Need: {2})"
+	}
+	"Prisioneiros"
+	{
+		"en" 	"Shop only for terrorists!"
+	}
+	
+	"Prisioneiros2"
+	{
+		"en" 	"Item only dor terrorists!"
+	}
+	
+	"Errou"
+	{
+		"en" 	"You missed your target, lose the chance to kill a guard with your power!!!"
+	}
+	
+	"Ganhou"
+	{
+		"#format" 	"{1:d}"
+		"en" 	"You win +{1} of credits for hit a AVADA KEDAVRA!"
+	}
+	
+	"KillCT"
+	{
+		"#format" 	"{1:d},{2:d}"
+		"en" 		"Your credits: {1} (+{2})"
+	}
+	
+	"KillT"
+	{
+		"#format" 	"{1:d},{2:d}"
+		"en" 		"Your credits: {1} (+{2})"
+	}
+	
+	"Players Credits"
+	{
+		"en" 		"Players credits:"
+	}
+	"NoCredits"
+	{
+
+		"en"		"You not have sufficient credits for gift."
+	}
+}
