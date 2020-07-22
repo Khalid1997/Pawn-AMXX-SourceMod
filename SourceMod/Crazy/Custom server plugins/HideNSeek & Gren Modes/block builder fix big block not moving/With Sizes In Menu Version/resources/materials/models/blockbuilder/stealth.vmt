@@ -1,0 +1,5 @@
+"vertexlitGeneric"
+{
+	"$basetexture" "models/blockbuilder/stealth"
+	"$translucent" "1"
+}

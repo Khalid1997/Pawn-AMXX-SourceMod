@@ -1,0 +1,11 @@
+//"UnlitGeneric"
+"Modulate"
+{
+	"$baseTexture" "pp2016/outline_in"
+	"$nocull" "1"	
+	"$additive" "1"
+	"$translucent" "1"
+        "$selfillum" 1
+	"$model" "1"
+	"$MOD2X" "1"
+}

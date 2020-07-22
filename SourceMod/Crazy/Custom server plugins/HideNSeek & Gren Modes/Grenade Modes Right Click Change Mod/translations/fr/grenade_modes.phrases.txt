@@ -1,0 +1,72 @@
+"Phrases"
+{
+	"TGrenade"
+	{
+		"fr"	"Grenade"
+	}
+	"TExplosive"
+	{
+		"fr"	"Explosive"
+	}
+	"TFlashbang"
+	{
+		"fr"	"Flashbang"
+	}
+	"TSmoke"
+	{
+		"fr"	"Smoke"
+	}
+	"TDecoy"
+	{
+		"fr"	"Decoy"
+	}
+	"TTactical"
+	{
+		"fr"	"Tactique"
+	}
+	"TIncendiary"
+	{
+		"fr"	"Incendiaire"
+	}
+	"TMolotov"
+	{
+		"fr"	"Molotov"
+	}
+
+	"TMode"
+	{
+		"fr"	"Mode"
+	}
+	"TNormal"
+	{
+		"fr"	"Normal"
+	}
+	"TImpact"
+	{
+		"fr"	"Impact"
+	}
+	"TProximity"
+	{
+		"fr"	"Proximité"
+	}
+	"TTripwire"
+	{
+		"fr"	"Fil piège"
+	}
+	"TMotionSensor"
+	{
+		"fr"	"Détecteur de mouvement"
+	}
+	"TSatchelCharge"
+	{
+		"fr"	"Charge explosive"
+	}
+	"THoming"
+	{
+		"fr"	"Tête chercheuse"
+	}
+	"TCeilingTrap"
+	{
+		"fr"	"Piège de plafond"
+	}
+}

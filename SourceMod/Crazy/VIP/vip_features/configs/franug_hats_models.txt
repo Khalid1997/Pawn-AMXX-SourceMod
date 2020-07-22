@@ -1,0 +1,586 @@
+"Hats"
+{
+	"viking_helmet"
+	{
+		"models&player&custom_player&legacy&gxp&liz_dynasty&lizdynasty_v1f.mdl"
+		{
+			"position"		"0.000000 -3.500000 5.000000"
+			"angles"		"-13.500000 175.500000 0.000000"
+		}
+		"models&player&custom_player&owston&narutoshippuden&sasuke&sasukewar.mdl "
+		{
+			"position"		"0.000000 -4.000000 6.000000"
+			"angles"		"14.000000 -8.000000 0.000000"
+		}
+		"models&player&custom_player&caleon1&re3_jill_cop&re3_jill_cop.mdl"
+		{
+			"position"		"0.000000 -5.000000 6.000000"
+			"angles"		"9.000000 -26.000000 0.000000"
+		}
+		"models&player&custom_player&owston&naruto&sixpathv3.mdl"
+		{
+			"position"		"0.000000 -1.000000 5.000000"
+			"angles"		"26.000000 -24.000000 -9.000000"
+		}
+		"models&player&custom_player&kodua&negan&negan.mdl"
+		{
+			"position"		"0.000000 -5.000000 1.000000"
+			"angles"		"-21.000000 -3.000000 0.000000"
+		}
+		"models&player&custom_player&kaesar2018&thanos&thanos.mdl"
+		{
+			"position"		"0.000000 -5.000000 1.500000"
+			"angles"		"12.000000 -1.000000 0.000000"
+		}
+		"models&player&custom_player&nf&ellie&ellie.mdl"
+		{
+			"position"		"0.000000 -4.000000 4.500000"
+			"angles"		"13.000000 -1.000000 0.000000"
+		}
+		"models&player&custom_player&caleon1&connor&connor.mdl"
+		{
+			"position"		"0.000000 -4.000000 3.500000"
+			"angles"		"30.500000 0.000000 0.000000"
+		}
+		"models&player&gtav&trevor.mdl"
+		{
+			"position"		"0.000000 -2.000000 1.500000"
+			"angles"		"16.500000 0.000000 0.000000"
+		}
+		"models&player&custom_player&kuristaja&octodad&octodad_tuxedo.mdl"
+		{
+			"position"		"0.000000 -4.000000 21.500000"
+			"angles"		"16.500000 0.000000 0.000000"
+		}
+	}
+	"astronauthelmet"
+	{
+		"models&player&custom_player&legacy&gxp&liz_dynasty&lizdynasty_v1f.mdl"
+		{
+			"position"		"0.000000 -4.000000 -4.000000"
+			"angles"		"27.000000 -8.000000 2.000000"
+		}
+		"models&player&custom_player&owston&narutoshippuden&sasuke&sasukewar.mdl "
+		{
+			"position"		"0.000000 -5.000000 -3.000000"
+			"angles"		"34.000000 -26.000000 0.000000"
+		}
+		"models&player&custom_player&caleon1&re3_jill_cop&re3_jill_cop.mdl"
+		{
+			"position"		"0.000000 -7.000000 -5.000000"
+			"angles"		"27.000000 -20.000000 0.000000"
+		}
+		"models&player&custom_player&owston&naruto&sixpathv3.mdl"
+		{
+			"position"		"0.000000 -6.000000 -5.000000"
+			"angles"		"39.000000 -24.000000 -9.000000"
+		}
+		"models&player&custom_player&kodua&negan&negan.mdl"
+		{
+			"position"		"0.000000 -4.000000 -6.500000"
+			"angles"		"12.000000 -18.000000 0.000000"
+		}
+		"models&player&custom_player&kaesar2018&thanos&thanos.mdl"
+		{
+			"position"		"0.000000 -6.000000 -4.500000"
+			"angles"		"52.000000 -1.000000 0.000000"
+		}
+		"models&player&custom_player&nf&ellie&ellie.mdl"
+		{
+			"position"		"0.000000 -6.000000 -2.500000"
+			"angles"		"45.500000 -1.000000 0.000000"
+		}
+		"models&player&custom_player&caleon1&connor&connor.mdl"
+		{
+			"position"		"0.000000 -5.000000 -3.500000"
+			"angles"		"30.500000 0.000000 0.000000"
+		}
+		"models&player&gtav&trevor.mdl"
+		{
+			"position"		"0.000000 -4.000000 -7.500000"
+			"angles"		"16.500000 0.000000 0.000000"
+		}
+		"models&player&custom_player&kuristaja&octodad&octodad_tuxedo.mdl"
+		{
+			"position"		"0.000000 -6.000000 -2.500000"
+			"angles"		"16.500000 0.000000 0.000000"
+		}
+	}
+	"afro"
+	{
+		"models&player&custom_player&legacy&gxp&liz_dynasty&lizdynasty_v1f.mdl"
+		{
+			"position"		"0.000000 -4.000000 5.000000"
+			"angles"		"0.000000 0.000000 0.000000"
+		}
+		"models&player&custom_player&owston&narutoshippuden&sasuke&sasukewar.mdl "
+		{
+			"position"		"0.000000 -4.000000 5.000000"
+			"angles"		"0.000000 0.000000 0.000000"
+		}
+		"models&player&custom_player&caleon1&re3_jill_cop&re3_jill_cop.mdl"
+		{
+			"position"		"0.000000 -5.000000 6.000000"
+			"angles"		"9.000000 -6.000000 0.000000"
+		}
+		"models&player&custom_player&owston&naruto&sixpathv3.mdl"
+		{
+			"position"		"0.000000 -1.000000 2.000000"
+			"angles"		"26.000000 6.000000 -9.000000"
+		}
+		"models&player&custom_player&kodua&negan&negan.mdl"
+		{
+			"position"		"0.000000 -5.000000 1.000000"
+			"angles"		"-21.000000 -3.000000 0.000000"
+		}
+		"models&player&custom_player&kaesar2018&thanos&thanos.mdl"
+		{
+			"position"		"0.000000 -5.000000 1.500000"
+			"angles"		"12.000000 -1.000000 0.000000"
+		}
+		"models&player&custom_player&nf&ellie&ellie.mdl"
+		{
+			"position"		"0.000000 -5.000000 3.500000"
+			"angles"		"12.000000 -1.000000 0.000000"
+		}
+		"models&player&custom_player&caleon1&connor&connor.mdl"
+		{
+			"position"		"0.000000 -4.000000 4.500000"
+			"angles"		"30.500000 0.000000 0.000000"
+		}
+		"models&player&gtav&trevor.mdl"
+		{
+			"position"		"0.000000 -3.000000 4.500000"
+			"angles"		"30.500000 0.000000 0.000000"
+		}
+		"models&player&custom_player&kuristaja&octodad&octodad_tuxedo.mdl"
+		{
+			"position"		"0.000000 -6.000000 8.500000"
+			"angles"		"30.500000 0.000000 2.500000"
+		}
+	}
+	"androssmask"
+	{
+		"models&player&custom_player&legacy&gxp&liz_dynasty&lizdynasty_v1f.mdl"
+		{
+			"position"		"0.000000 -3.000000 1.000000"
+			"angles"		"0.000000 0.000000 0.000000"
+		}
+		"models&player&custom_player&owston&narutoshippuden&sasuke&sasukewar.mdl "
+		{
+			"position"		"0.000000 -4.000000 3.000000"
+			"angles"		"0.000000 0.000000 0.000000"
+		}
+		"models&player&custom_player&caleon1&re3_jill_cop&re3_jill_cop.mdl"
+		{
+			"position"		"0.000000 -5.000000 1.000000"
+			"angles"		"9.000000 -6.000000 0.000000"
+		}
+		"models&player&custom_player&owston&naruto&sixpathv3.mdl"
+		{
+			"position"		"0.000000 -1.000000 0.000000"
+			"angles"		"26.000000 6.000000 -9.000000"
+		}
+		"models&player&custom_player&kodua&negan&negan.mdl"
+		{
+			"position"		"0.000000 -5.000000 -1.000000"
+			"angles"		"-21.000000 -3.000000 0.000000"
+		}
+		"models&player&custom_player&kaesar2018&thanos&thanos.mdl"
+		{
+			"position"		"0.000000 -5.000000 -0.500000"
+			"angles"		"12.000000 -1.000000 0.000000"
+		}
+		"models&player&custom_player&nf&ellie&ellie.mdl"
+		{
+			"position"		"0.000000 -4.000000 1.500000"
+			"angles"		"13.000000 -1.000000 0.000000"
+		}
+		"models&player&custom_player&caleon1&connor&connor.mdl"
+		{
+			"position"		"0.000000 -4.000000 0.500000"
+			"angles"		"30.500000 0.000000 0.000000"
+		}
+		"models&player&gtav&trevor.mdl"
+		{
+			"position"		"0.000000 -1.000000 -1.500000"
+			"angles"		"30.500000 0.000000 0.000000"
+		}
+		"models&player&custom_player&kuristaja&octodad&octodad_tuxedo.mdl"
+		{
+			"position"		"0.000000 2.000000 2.500000"
+			"angles"		"12.500000 0.000000 2.500000"
+		}
+	}
+	"linkhat"
+	{
+		"models&player&custom_player&legacy&gxp&liz_dynasty&lizdynasty_v1f.mdl"
+		{
+			"position"		"0.000000 -3.000000 3.000000"
+			"angles"		"0.000000 0.000000 0.000000"
+		}
+		"models&player&custom_player&owston&narutoshippuden&sasuke&sasukewar.mdl "
+		{
+			"position"		"0.000000 -4.000000 3.000000"
+			"angles"		"0.000000 0.000000 0.000000"
+		}
+		"models&player&custom_player&caleon1&re3_jill_cop&re3_jill_cop.mdl"
+		{
+			"position"		"0.000000 -6.000000 3.000000"
+			"angles"		"9.000000 -6.000000 0.000000"
+		}
+		"models&player&custom_player&owston&naruto&sixpathv3.mdl"
+		{
+			"position"		"0.000000 -4.000000 0.000000"
+			"angles"		"26.000000 6.000000 -9.000000"
+		}
+		"models&player&custom_player&kodua&negan&negan.mdl"
+		{
+			"position"		"0.000000 -6.000000 -1.000000"
+			"angles"		"-43.000000 -3.000000 0.000000"
+		}
+		"models&player&custom_player&kaesar2018&thanos&thanos.mdl"
+		{
+			"position"		"0.000000 -5.000000 -0.500000"
+			"angles"		"12.000000 -1.000000 0.000000"
+		}
+		"models&player&custom_player&nf&ellie&ellie.mdl"
+		{
+			"position"		"0.000000 -6.000000 2.500000"
+			"angles"		"13.000000 -1.000000 0.000000"
+		}
+		"models&player&custom_player&caleon1&connor&connor.mdl"
+		{
+			"position"		"0.000000 -4.000000 0.500000"
+			"angles"		"30.500000 0.000000 0.000000"
+		}
+		"models&player&gtav&trevor.mdl"
+		{
+			"position"		"0.000000 -4.000000 -1.500000"
+			"angles"		"-37.000000 0.000000 0.000000"
+		}
+		"models&player&custom_player&kuristaja&octodad&octodad_tuxedo.mdl"
+		{
+			"position"		"0.000000 -22.000000 8.500000"
+			"angles"		"12.500000 0.000000 2.500000"
+		}
+	}
+	"majorasmask"
+	{
+		"models&player&custom_player&legacy&gxp&liz_dynasty&lizdynasty_v1f.mdl"
+		{
+			"position"		"0.000000 -4.000000 2.000000"
+			"angles"		"0.000000 0.000000 0.000000"
+		}
+		"models&player&custom_player&owston&narutoshippuden&sasuke&sasukewar.mdl "
+		{
+			"position"		"0.000000 -4.000000 3.000000"
+			"angles"		"0.000000 0.000000 0.000000"
+		}
+		"models&player&custom_player&caleon1&re3_jill_cop&re3_jill_cop.mdl"
+		{
+			"position"		"0.000000 -6.000000 3.000000"
+			"angles"		"9.000000 -6.000000 0.000000"
+		}
+		"models&player&custom_player&owston&naruto&sixpathv3.mdl"
+		{
+			"position"		"0.000000 -4.000000 0.000000"
+			"angles"		"26.000000 6.000000 -9.000000"
+		}
+		"models&player&custom_player&kodua&negan&negan.mdl"
+		{
+			"position"		"0.000000 -6.000000 -1.000000"
+			"angles"		"-43.000000 -3.000000 0.000000"
+		}
+		"models&player&custom_player&kaesar2018&thanos&thanos.mdl"
+		{
+			"position"		"0.000000 -5.000000 -0.500000"
+			"angles"		"12.000000 -1.000000 0.000000"
+		}
+		"models&player&custom_player&nf&ellie&ellie.mdl"
+		{
+			"position"		"0.000000 -6.000000 2.500000"
+			"angles"		"13.000000 -1.000000 0.000000"
+		}
+		"models&player&custom_player&caleon1&connor&connor.mdl"
+		{
+			"position"		"0.000000 -4.000000 0.500000"
+			"angles"		"30.500000 0.000000 0.000000"
+		}
+		"models&player&gtav&trevor.mdl"
+		{
+			"position"		"0.000000 -3.000000 -1.500000"
+			"angles"		"30.500000 0.000000 2.500000"
+		}
+		"models&player&custom_player&kuristaja&octodad&octodad_tuxedo.mdl"
+		{
+			"position"		"0.000000 -2.000000 4.500000"
+			"angles"		"12.500000 0.000000 2.500000"
+		}
+	}
+	"midnahat"
+	{
+		"models&player&custom_player&legacy&gxp&liz_dynasty&lizdynasty_v1f.mdl"
+		{
+			"position"		"0.000000 -3.000000 0.000000"
+			"angles"		"0.000000 0.000000 0.000000"
+		}
+		"models&player&custom_player&owston&narutoshippuden&sasuke&sasukewar.mdl "
+		{
+			"position"		"0.000000 -4.000000 0.000000"
+			"angles"		"0.000000 0.000000 0.000000"
+		}
+		"models&player&custom_player&caleon1&re3_jill_cop&re3_jill_cop.mdl"
+		{
+			"position"		"0.000000 -6.000000 0.000000"
+			"angles"		"9.000000 -6.000000 0.000000"
+		}
+		"models&player&custom_player&owston&naruto&sixpathv3.mdl"
+		{
+			"position"		"0.000000 -4.000000 -2.000000"
+			"angles"		"26.000000 6.000000 -9.000000"
+		}
+		"models&player&custom_player&kodua&negan&negan.mdl"
+		{
+			"position"		"0.500000 -4.000000 -1.000000"
+			"angles"		"1.000000 -5.000000 0.000000"
+		}
+		"models&player&custom_player&kaesar2018&thanos&thanos.mdl"
+		{
+			"position"		"0.000000 -5.000000 -1.500000"
+			"angles"		"12.000000 -1.000000 0.000000"
+		}
+		"models&player&custom_player&nf&ellie&ellie.mdl"
+		{
+			"position"		"0.000000 -5.000000 1.500000"
+			"angles"		"13.000000 -1.000000 0.000000"
+		}
+		"models&player&custom_player&caleon1&connor&connor.mdl"
+		{
+			"position"		"0.000000 -4.000000 0.500000"
+			"angles"		"30.500000 0.000000 0.000000"
+		}
+		"models&player&gtav&trevor.mdl"
+		{
+			"position"		"0.000000 -3.000000 -1.500000"
+			"angles"		"30.500000 0.000000 2.500000"
+		}
+		"models&player&custom_player&kuristaja&octodad&octodad_tuxedo.mdl"
+		{
+			"position"		"0.000000 -2.000000 4.500000"
+			"angles"		"12.500000 0.000000 2.500000"
+		}
+	}
+	"pimphat"
+	{
+		"models&player&custom_player&legacy&gxp&liz_dynasty&lizdynasty_v1f.mdl"
+		{
+			"position"		"0.000000 -4.000000 5.000000"
+			"angles"		"0.000000 0.000000 0.000000"
+		}
+		"models&player&custom_player&owston&narutoshippuden&sasuke&sasukewar.mdl "
+		{
+			"position"		"0.000000 -5.000000 7.000000"
+			"angles"		"0.000000 0.000000 0.000000"
+		}
+		"models&player&custom_player&caleon1&re3_jill_cop&re3_jill_cop.mdl"
+		{
+			"position"		"0.000000 -6.000000 7.000000"
+			"angles"		"9.000000 -6.000000 0.000000"
+		}
+		"models&player&custom_player&owston&naruto&sixpathv3.mdl"
+		{
+			"position"		"0.000000 -1.000000 5.000000"
+			"angles"		"28.000000 -16.000000 -9.000000"
+		}
+		"models&player&custom_player&kodua&negan&negan.mdl"
+		{
+			"position"		"0.500000 -5.000000 4.000000"
+			"angles"		"1.000000 -5.000000 0.000000"
+		}
+		"models&player&custom_player&kaesar2018&thanos&thanos.mdl"
+		{
+			"position"		"0.000000 -5.000000 4.500000"
+			"angles"		"12.000000 -1.000000 0.000000"
+		}
+		"models&player&custom_player&nf&ellie&ellie.mdl"
+		{
+			"position"		"0.000000 -4.000000 7.500000"
+			"angles"		"13.000000 -1.000000 0.000000"
+		}
+		"models&player&custom_player&caleon1&connor&connor.mdl"
+		{
+			"position"		"0.000000 -2.000000 6.500000"
+			"angles"		"30.500000 0.000000 0.000000"
+		}
+		"models&player&gtav&trevor.mdl"
+		{
+			"position"		"0.000000 -1.000000 3.500000"
+			"angles"		"30.500000 0.000000 2.500000"
+		}
+		"models&player&custom_player&kuristaja&octodad&octodad_tuxedo.mdl"
+		{
+			"position"		"0.000000 -4.000000 25.500000"
+			"angles"		"12.500000 0.000000 2.500000"
+		}
+	}
+	"seusshat"
+	{
+		"models&player&custom_player&legacy&gxp&liz_dynasty&lizdynasty_v1f.mdl"
+		{
+			"position"		"0.000000 -4.000000 5.000000"
+			"angles"		"0.000000 0.000000 0.000000"
+		}
+		"models&player&custom_player&owston&narutoshippuden&sasuke&sasukewar.mdl "
+		{
+			"position"		"0.000000 -5.000000 6.000000"
+			"angles"		"0.000000 0.000000 0.000000"
+		}
+		"models&player&custom_player&caleon1&re3_jill_cop&re3_jill_cop.mdl"
+		{
+			"position"		"0.000000 -6.000000 7.000000"
+			"angles"		"9.000000 -6.000000 0.000000"
+		}
+		"models&player&custom_player&owston&naruto&sixpathv3.mdl"
+		{
+			"position"		"0.000000 -1.000000 5.000000"
+			"angles"		"28.000000 -16.000000 -9.000000"
+		}
+		"models&player&custom_player&kodua&negan&negan.mdl"
+		{
+			"position"		"0.500000 -5.000000 2.000000"
+			"angles"		"1.000000 -5.000000 0.000000"
+		}
+		"models&player&custom_player&kaesar2018&thanos&thanos.mdl"
+		{
+			"position"		"0.000000 -5.000000 2.500000"
+			"angles"		"12.000000 -1.000000 0.000000"
+		}
+		"models&player&custom_player&nf&ellie&ellie.mdl"
+		{
+			"position"		"0.000000 -4.000000 4.500000"
+			"angles"		"13.000000 -1.000000 0.000000"
+		}
+		"models&player&custom_player&caleon1&connor&connor.mdl"
+		{
+			"position"		"0.000000 -3.000000 4.500000"
+			"angles"		"30.500000 0.000000 0.000000"
+		}
+		"models&player&gtav&trevor.mdl"
+		{
+			"position"		"0.000000 -2.000000 1.500000"
+			"angles"		"30.500000 0.000000 2.500000"
+		}
+		"models&player&custom_player&kuristaja&octodad&octodad_tuxedo.mdl"
+		{
+			"position"		"0.000000 -4.000000 21.500000"
+			"angles"		"12.500000 0.000000 2.500000"
+		}
+	}
+	"sombrero"
+	{
+		"models&player&custom_player&legacy&gxp&liz_dynasty&lizdynasty_v1f.mdl"
+		{
+			"position"		"0.000000 -4.000000 5.000000"
+			"angles"		"0.000000 0.000000 0.000000"
+		}
+		"models&player&custom_player&owston&narutoshippuden&sasuke&sasukewar.mdl "
+		{
+			"position"		"0.000000 -5.000000 6.000000"
+			"angles"		"0.000000 0.000000 0.000000"
+		}
+		"models&player&custom_player&caleon1&re3_jill_cop&re3_jill_cop.mdl"
+		{
+			"position"		"0.000000 -6.000000 7.000000"
+			"angles"		"9.000000 -6.000000 0.000000"
+		}
+		"models&player&custom_player&owston&naruto&sixpathv3.mdl"
+		{
+			"position"		"0.000000 -1.000000 5.000000"
+			"angles"		"28.000000 -16.000000 -9.000000"
+		}
+		"models&player&custom_player&kodua&negan&negan.mdl"
+		{
+			"position"		"0.500000 -5.000000 2.000000"
+			"angles"		"1.000000 -5.000000 0.000000"
+		}
+		"models&player&custom_player&kaesar2018&thanos&thanos.mdl"
+		{
+			"position"		"0.000000 -5.000000 2.500000"
+			"angles"		"12.000000 -1.000000 0.000000"
+		}
+		"models&player&custom_player&nf&ellie&ellie.mdl"
+		{
+			"position"		"0.000000 -4.000000 4.500000"
+			"angles"		"13.000000 -1.000000 0.000000"
+		}
+		"models&player&custom_player&caleon1&connor&connor.mdl"
+		{
+			"position"		"0.000000 -3.000000 4.500000"
+			"angles"		"30.500000 0.000000 0.000000"
+		}
+		"models&player&gtav&trevor.mdl"
+		{
+			"position"		"0.000000 -2.000000 2.500000"
+			"angles"		"30.500000 0.000000 2.500000"
+		}
+		"models&player&custom_player&kuristaja&octodad&octodad_tuxedo.mdl"
+		{
+			"position"		"0.000000 -4.000000 22.500000"
+			"angles"		"12.500000 0.000000 2.500000"
+		}
+	}
+	"witchhat"
+	{
+		"models&player&custom_player&legacy&gxp&liz_dynasty&lizdynasty_v1f.mdl"
+		{
+			"position"		"0.000000 -4.000000 5.000000"
+			"angles"		"0.000000 0.000000 0.000000"
+		}
+		"models&player&custom_player&owston&narutoshippuden&sasuke&sasukewar.mdl "
+		{
+			"position"		"0.000000 -5.000000 6.000000"
+			"angles"		"0.000000 0.000000 0.000000"
+		}
+		"models&player&custom_player&caleon1&re3_jill_cop&re3_jill_cop.mdl"
+		{
+			"position"		"0.000000 -6.000000 7.000000"
+			"angles"		"9.000000 -6.000000 0.000000"
+		}
+		"models&player&custom_player&owston&naruto&sixpathv3.mdl"
+		{
+			"position"		"0.000000 -1.000000 5.000000"
+			"angles"		"28.000000 -18.000000 -9.000000"
+		}
+		"models&player&custom_player&kodua&negan&negan.mdl"
+		{
+			"position"		"0.500000 -5.000000 2.000000"
+			"angles"		"1.000000 -5.000000 0.000000"
+		}
+		"models&player&custom_player&kaesar2018&thanos&thanos.mdl"
+		{
+			"position"		"0.000000 -5.000000 2.500000"
+			"angles"		"12.000000 -1.000000 0.000000"
+		}
+		"models&player&custom_player&nf&ellie&ellie.mdl"
+		{
+			"position"		"0.000000 -4.000000 4.500000"
+			"angles"		"13.000000 -1.000000 0.000000"
+		}
+		"models&player&custom_player&caleon1&connor&connor.mdl"
+		{
+			"position"		"0.000000 -3.000000 4.500000"
+			"angles"		"30.500000 0.000000 0.000000"
+		}
+		"models&player&gtav&trevor.mdl"
+		{
+			"position"		"0.000000 -2.000000 2.500000"
+			"angles"		"30.500000 0.000000 2.500000"
+		}
+		"models&player&custom_player&kuristaja&octodad&octodad_tuxedo.mdl"
+		{
+			"position"		"0.000000 -4.000000 22.500000"
+			"angles"		"12.500000 0.000000 2.500000"
+		}
+	}
+}

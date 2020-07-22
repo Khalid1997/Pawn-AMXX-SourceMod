@@ -1,0 +1,13 @@
+/*
+ReDie					1
+Emotes					3
+Weapons Skins			5
+Knives					7	
+Player Skins			9
+Hats					11
+Parachute				13
+Change Tag Chat Color	15
+Change Tag Name			17
+VoteMod					19
+VoteMap					21
+*/

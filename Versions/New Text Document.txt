@@ -1,0 +1,54 @@
+"Settings"
+{
+	"Debug" "1"
+	"AdminVIP"
+	{
+		"Enabled" "1"
+		"1"
+		{
+			"admin_flags"		"abc"	// "any"
+			"mode"			"equal/contain"
+			"give_vip_flags"	"root"
+		}
+	}
+
+	"FreeVIP"
+	{
+		"Enabled" "0"
+		"Times"
+		{
+			"1"
+			{
+				"date"	"13/8/2016" // will only work that day.
+				"start_time" "13:00"
+				"end_time" "15:00"
+			}
+			"2"
+			{
+				"day" "mon"	// Will work on every monday.
+				"start_time" ""
+				"end_time" ""
+			}
+		}
+	}
+}
+
+"FeatureFlagOverride"
+{
+	"feature_name" "flags" // default flag mode is contain
+	"feature_name"
+	{
+		"flags" "abc" // putting "" as flags will disable the feature / any
+		"flags_mode" "equal/contain" // default is contain
+	}
+}
+
+"VIPList"
+{
+	"SteamID" "root"
+	"SteamID"
+	{
+		"flags" "abcd" // "root"
+		"end_time" "191567755"
+	}
+}

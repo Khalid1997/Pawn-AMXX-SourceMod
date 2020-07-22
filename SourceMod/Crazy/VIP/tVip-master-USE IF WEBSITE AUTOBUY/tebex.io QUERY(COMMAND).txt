@@ -1,0 +1,3 @@
+INSERT INTO `tVip` (`Id`, `timestamp`, `playername`, `playerid`, `enddate`, `admin_playername`, `admin_playerid`) VALUES (NULL, CURRENT_TIMESTAMP, '{purchaserName} ', '{steamid}', CURRENT_TIMESTAMP + INTERVAL 1 MONTH, 'Web Purchase', 'Web Purchase' ) ON DUPLICATE KEY UPDATE `enddate` = DATE_ADD(enddate, INTERVAL 1 MONTH);
+
+in tVIP plugin make playername column default null and edit insert query to not add name cause names are messed up with invisible characters in query

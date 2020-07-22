@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS store_users_credits_log ( accountID INT, credits INT, updated_credits INT, reason VARCHAR(256), time_of_purchase DATETIME DEFAULT CURRENT_TIMESTAMP())

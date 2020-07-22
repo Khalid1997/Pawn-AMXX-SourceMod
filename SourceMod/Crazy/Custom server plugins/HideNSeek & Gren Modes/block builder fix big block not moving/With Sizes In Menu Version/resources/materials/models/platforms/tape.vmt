@@ -1,0 +1,25 @@
+"UnlitGeneric"
+//"Modulate"
+{
+	"$baseTexture" "models/platforms/tape"
+	"$nocull" "1"
+        "$selfillum" 1	
+	"$additive" "1"
+	"$translucent" "1"
+	"$model" "1"
+	
+	"Proxies"
+	{
+
+		"TextureScroll"
+		{
+			"texturescrollvar" "$basetexturetransform"
+			"texturescrollrate" -1
+			"texturescrollangle" 45
+		}
+
+
+	}
+
+}
+

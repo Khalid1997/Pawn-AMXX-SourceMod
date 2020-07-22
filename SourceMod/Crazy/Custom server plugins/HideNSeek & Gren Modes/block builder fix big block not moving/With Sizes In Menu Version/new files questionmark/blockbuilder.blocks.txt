@@ -1,0 +1,387 @@
+"Blocks"
+{
+	"Platform" // block 0
+	{
+		"model"     	"models/BollnasTeam_Normal/platform.mdl"
+		"model_large"   "models/BollnasTeam_Large/platform.mdl"
+		"model_small"   "models/BollnasTeam_Small/platform.mdl"
+		"model_pole"    "models/BollnasTeam_Pole/platform.mdl"
+		
+		"sound"		""
+		"cooldown"	"0"
+		"effect"	"0"
+	}
+	
+	"Bhop" // block 1
+	{
+		"model"     	"models/BollnasTeam_Normal/bunnyhop.mdl"
+		"model_large"   "models/BollnasTeam_Large/bunnyhop.mdl"
+		"model_small"   "models/BollnasTeam_Small/bunnyhop.mdl"
+		"model_pole"    "models/BollnasTeam_Pole/bunnyhop.mdl"
+		
+		"sound"		""
+		"cooldown"	"1.0"
+		"effect"	"0.1"
+	}
+	
+	"Damage" // block 2
+	{
+		"model"     	"models/BollnasTeam_Normal/damage.mdl"
+		"model_large"   "models/BollnasTeam_Large/damage.mdl"
+		"model_small"   "models/BollnasTeam_Small/damage.mdl"
+		"model_pole"    "models/BollnasTeam_Pole/damage.mdl"
+		
+		"sound"		""
+		"cooldown"	"0"
+		"effect"	"1.0"
+	}
+	
+	"Health" // block 3
+	{
+		"model"     	"models/BollnasTeam_Normal/healer.mdl"
+		"model_large"   "models/BollnasTeam_Large/healer.mdl"
+		"model_small"   "models/BollnasTeam_Small/healer.mdl"
+		"model_pole"    "models/BollnasTeam_Pole/healer.mdl"
+		
+		"sound"		""
+		"cooldown"	"0"
+		"effect"	"1.0"
+	}
+	
+	"Ice" // block 4
+	{
+		"model"     	"models/BollnasTeam_Normal/ice.mdl"
+		"model_large"   "models/BollnasTeam_Large/ice.mdl"
+		"model_small"   "models/BollnasTeam_Small/ice.mdl"
+		"model_pole"    "models/BollnasTeam_Pole/ice.mdl"
+		
+		"sound"		""
+		"cooldown"	"0"
+		"effect"	"0"
+	}
+	
+	"Tramp" // block 5
+	{
+		"model"     	"models/BollnasTeam_Normal/trampoline.mdl"
+		"model_large"   "models/BollnasTeam_Large/trampoline.mdl"
+		"model_small"   "models/BollnasTeam_Small/trampoline.mdl"
+		"model_pole"    "models/BollnasTeam_Pole/trampoline.mdl"
+		
+		"sound"		""
+		"cooldown"	"0"
+		"effect"	"0"
+	}
+	
+	"Speedboost" // block 6
+	{
+		
+		"model"     	"models/BollnasTeam_Normal/speedboost.mdl"
+		"model_large"   "models/BollnasTeam_Large/speedboost.mdl"
+		"model_small"   "models/BollnasTeam_Small/speedboost.mdl"
+		"model_pole"    "models/BollnasTeam_Pole/speedboost.mdl"
+		
+		"sound"		""
+		"cooldown"	"0"
+		"effect"	"0"
+	}
+	
+	"Invincibility" // block 7
+	{
+		"model"     	"models/BollnasTeam_Normal/invincibility.mdl"
+		"model_large"   "models/BollnasTeam_Large/invincibility.mdl"
+		"model_small"   "models/BollnasTeam_Small/invincibility.mdl"
+		"model_pole"    "models/BollnasTeam_Pole/invincibility.mdl"
+		
+		"sound"		"sound/blockbuilder/invincibility.mp3"
+		"cooldown"	"60.0"
+		"effect"	"12.0"
+	}
+	
+	"Stealth" // block 8
+	{
+		"model"     	"models/BollnasTeam_Normal/stealth.mdl"
+		"model_large"   "models/BollnasTeam_Large/stealth.mdl"
+		"model_small"   "models/BollnasTeam_Small/stealth.mdl"
+		"model_pole"    "models/BollnasTeam_Pole/stealth.mdl"
+		
+		"sound"		"sound/blockbuilder/stealth.mp3"
+		"cooldown"	"60.0"
+		"effect"	"10.0"
+	}
+	
+	"Death" // block 9
+	{
+		"model"     	"models/BollnasTeam_Normal/death.mdl"
+		"model_large"   "models/BollnasTeam_Large/death.mdl"
+		"model_small"   "models/BollnasTeam_Small/death.mdl"
+		"model_pole"    "models/BollnasTeam_Pole/death.mdl"
+		
+		"sound"		""
+		"cooldown"	"0"
+		"effect"	"0"
+	}
+	
+	"Nuke" // block 10
+	{
+		"model"     	""
+		"model_large"   ""
+		"model_small"   ""
+		"model_pole"    ""
+		
+		"sound"		"sound/blockbuilder/nuke.mp3"
+		"cooldown"	"0"
+		"effect"	"0"
+	}
+	
+	"Gravity" // block 11
+	{
+		"model"     	"models/BollnasTeam_Normal/gravity.mdl"
+		"model_large"   "models/BollnasTeam_Large/gravity.mdl"
+		"model_small"   "models/BollnasTeam_Small/gravity.mdl"
+		"model_pole"    "models/BollnasTeam_Pole/gravity.mdl"
+		
+		"sound"		""
+		"cooldown"	"0"
+		"effect"	"0"
+	}
+	
+	"Fire" // block 12
+	{
+		"model"     	"models/blockbuilder/fire.mdl"
+		"model_large"   "models/blockbuilder/large_fire.mdl"
+		"model_small"   "models/blockbuilder/small_fire.mdl"
+		"model_pole"    "models/blockbuilder/pole_fire.mdl"
+		
+		"sound"		""
+		"cooldown"	"0"
+		"effect"	"0"
+	}
+	
+	"Slap" // block 13
+	{
+		"model"     	""
+		"model_large"   ""
+		"model_small"   ""
+		"model_pole"    ""
+		
+		"sound"		""
+		"cooldown"	"0"
+		"effect"	"0"
+	}
+	
+	"CTBarrier" // block 14
+	{
+		"model"     	"models/BollnasTeam_Normal/ctbarrier.mdl"
+		"model_large"   "models/BollnasTeam_Large/ctbarrier.mdl"
+		"model_small"   "models/BollnasTeam_Small/ctbarrier.mdl"
+		"model_pole"    "models/BollnasTeam_Pole/ctbarrier.mdl"
+		
+		"sound"		""
+		"cooldown"	"0"
+		"effect"	"0"
+	}
+	
+	"TBarrier" // block 15
+	{
+		"model"     	"models/BollnasTeam_Normal/ttbarrier.mdl"
+		"model_large"   "models/BollnasTeam_Large/ttbarrier.mdl"
+		"model_small"   "models/BollnasTeam_Small/ttbarrier.mdl"
+		"model_pole"    "models/BollnasTeam_Pole/ttbarrier.mdl"
+		
+		"sound"		""
+		"cooldown"	"0"
+		"effect"	"0"
+	}
+	
+	"Speed" // block 16
+	{
+		"model"     	"models/blockbuilder/speed.mdl"
+		"model_large"   "models/blockbuilder/large_speed.mdl"
+		"model_small"   "models/blockbuilder/small_speed.mdl"
+		"model_pole"    "models/blockbuilder/pole_speed.mdl"
+		
+		"sound"		"sound/blockbuilder/bootsofspeed.mp3"
+		"cooldown"	"60.0"
+		"effect"	"10.0"
+	}
+	
+	"Glass" // block 17
+	{
+		"model"     	"models/BollnasTeam_Normal/glass.mdl"
+		"model_large"   "models/BollnasTeam_Large/glass.mdl"
+		"model_small"   "models/BollnasTeam_Small/glass.mdl"
+		"model_pole"    "models/BollnasTeam_Pole/glass.mdl"
+		
+		"sound"		""
+		"cooldown"	"0"
+		"effect"	"0"
+	}
+	
+	"NoSlowDown" // block 18
+	{
+		"model"     	"models/blockbuilder/noslowdown.mdl"
+		"model_large"   "models/blockbuilder/large_noslowdown.mdl"
+		"model_small"   "models/blockbuilder/small_noslowdown.mdl"
+		"model_pole"    "models/blockbuilder/pole_noslowdown.mdl"
+		
+		"sound"		""
+		"cooldown"	"1.0"
+		"effect"	"0.1"
+	}
+	
+	"NoFallDmg" // block 19
+	{
+		"model"     	"models/BollnasTeam_Normal/nofalldamage.mdl"
+		"model_large"   "models/BollnasTeam_Large/nofalldamage.mdl"
+		"model_small"   "models/BollnasTeam_Small/nofalldamage.mdl"
+		"model_pole"    "models/BollnasTeam_Pole/nofalldamage.mdl"
+		
+		"sound"		""
+		"cooldown"	"0"
+		"effect"	"0"
+	}
+	
+	"Honey" // block 20
+	{
+		"model"     	"models/BollnasTeam_Normal/honey.mdl"
+		"model_large"   "models/BollnasTeam_Large/honey.mdl"
+		"model_small"   "models/BollnasTeam_Small/honey.mdl"
+		"model_pole"    "models/BollnasTeam_Pole/honey.mdl"
+		
+		"sound"		""
+		"cooldown"	"0"
+		"effect"	"0"
+	}
+	
+	"Camouflage" // block 21
+	{
+		"model"     	"models/blockbuilder/camouflage.mdl"
+		"model_large"   "models/blockbuilder/large_camouflage.mdl"
+		"model_small"   ""
+		"model_pole"    ""
+		
+		"sound"		"sound/blockbuilder/camouflage.mp3"
+		"cooldown"	"60.0"
+		"effect"	"15.0"
+	}
+	
+	"Deagle" // block 22
+	{
+		"model"     	"models/blockbuilder/deagle.mdl"
+		"model_large"   "models/blockbuilder/large_deagle.mdl"
+		"model_small"   "models/blockbuilder/small_deagle.mdl"
+		"model_pole"    "models/blockbuilder/pole_deagle.mdl"
+		
+		"sound"		""
+		"cooldown"	"0"
+		"effect"	"0"
+	}
+	
+	"AWP" // block 23
+	{
+		"model"     	"models/blockbuilder/awp.mdl"
+		"model_large"   "models/blockbuilder/large_awp.mdl"
+		"model_small"   "models/blockbuilder/small_awp.mdl"
+		"model_pole"    "models/blockbuilder/pole_awp.mdl"
+		
+		"sound"		""
+		"cooldown"	"0"
+		"effect"	"0"
+	}
+
+	"Random" // block 24
+	{
+		"model"     	"models/blockbuilder/random.mdl"
+		"model_large"   "models/blockbuilder/large_random.mdl"
+		"model_small"   "models/blockbuilder/small_random.mdl"
+		"model_pole"    "models/blockbuilder/pole_random.mdl"
+		
+		"sound"		""
+		"cooldown"	"0"
+		"effect"	"0"
+	}
+	
+	"HE" // block 25
+	{
+		"model"     	"models/blockbuilder/he.mdl"
+		"model_large"   "models/blockbuilder/large_he.mdl"
+		"model_small"   "models/blockbuilder/small_he.mdl"
+		"model_pole"    "models/blockbuilder/pole_he.mdl"
+		
+		"sound"		""
+		"cooldown"	"0"
+		"effect"	"0"
+	}
+
+	"Flash" // block 26
+	{
+		"model"     	"models/blockbuilder/flash.mdl"
+		"model_large"   "models/blockbuilder/large_flash.mdl"
+		"model_small"   "models/blockbuilder/small_flash.mdl"
+		"model_pole"    "models/blockbuilder/pole_flash.mdl"
+		
+		"sound"		""
+		"cooldown"	"0"
+		"effect"	"0"
+	}
+
+	"Frost" // block 27
+	{
+		"model"     	"models/blockbuilder/frost.mdl"
+		"model_large"   "models/blockbuilder/large_frost.mdl"
+		"model_small"   "models/blockbuilder/small_frost.mdl"
+		"model_pole"    "models/blockbuilder/pole_frost.mdl"
+		
+		"sound"		""
+		"cooldown"	"0"
+		"effect"	"0"
+	}
+
+	"Delayed" // block 28
+	{
+		"model"     	"models/BollnasTeam_Normal/dbunnyhop.mdl"
+		"model_large"   "models/BollnasTeam_Large/dbunnyhop.mdl"
+		"model_small"   "models/BollnasTeam_Small/dbunnyhop.mdl"
+		"model_pole"    "models/BollnasTeam_Pole/dbunnyhop.mdl"
+		
+		"sound"		""
+		"cooldown"	"3.0"
+		"effect"	"5.0"
+	}
+	
+	"Scout"		// 29
+	{
+		"model"     	"models/pp2016_normal/weapon.mdl"
+		"model_large"   "models/pp2016_large/weapon.mdl"
+		"model_small"   "models/pp2016_small/weapon.mdl"
+		"model_pole"    "models/pp2016_pole/weapon.mdl"
+		
+		"sound"		""
+		"cooldown"	"3.0"
+		"effect"	"5.0"
+	}
+
+	"p250"		//30
+	{
+		"model"     	"models/pp2016_normal/weapon.mdl"
+		"model_large"   "models/pp2016_large/weapon.mdl"
+		"model_small"   "models/pp2016_small/weapon.mdl"
+		"model_pole"    "models/pp2016_pole/weapon.mdl"
+		
+		"sound"		""
+		"cooldown"	"3.0"
+		"effect"	"5.0"
+	}
+
+	"Shotgun"	// 31
+	{
+		"model"     	"models/pp2016_normal/weapon.mdl"
+		"model_large"   "models/pp2016_large/weapon.mdl"
+		"model_small"   "models/pp2016_small/weapon.mdl"
+		"model_pole"    "models/pp2016_pole/weapon.mdl"
+		
+		"sound"		""
+		"cooldown"	"0.0"
+		"effect"	"0.0"
+	}
+}

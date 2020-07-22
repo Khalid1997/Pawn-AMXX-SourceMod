@@ -1,0 +1,24 @@
+"Refract"
+{
+	"$model" "1"
+	"$bluramount" "0.08"
+
+	"$refractamount" ".23"
+
+	"$refracttint" "{240 245 255}"
+	"$scale" "[1 1]"
+
+	"$dudvmap" "models/blockbuilder/ice_n"
+	"$normalmap" "models/blockbuilder/ice_n"
+
+	"$refracttinttexture" "models/blockbuilder/ice_top"
+
+	"$envmap" "env_cubemap"
+	"$normalmapalphaenvmapmask" 1
+	"$envmaptint" "[.8 .9 1]" 
+	"$envmapcontrast" .8
+	"$envmapsaturation" .9       
+        "$selfillum" 1
+        "$nocull" 1
+        "$surfaceprop" ice
+}

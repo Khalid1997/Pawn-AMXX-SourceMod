@@ -1,0 +1,110 @@
+"Hats"
+{
+	"viking_helmet"
+	{
+		"displayname"		"Viking Helmet"
+		"model"		"models/vikinghelmet/vikinghelmet.mdl"
+		"bonemerge"		"0"
+		"attachment"		"facemask"
+		"team"		"ct,t"
+		"position"		"0.000000 -4.000000 4.500000"
+		"angles"		"25.000000 0.000000 0.000000"
+	}
+
+	"afro"
+	{
+		"displayname"		"Afro"
+		"model"			"models/gmod_tower/afro.mdl"
+		"position"		"0.000000 -6.500000 -5.000000"
+		"angles"		"28.500000 10.500000 0.000000"
+		"bonemerge"		"0"
+		"attachment"		"facemask"
+		"team"		"ct,t"
+	}
+	"androssmask"
+	{
+		"displayname"		"Andross Mask"
+		"model"			"models/gmod_tower/androssmask.mdl"
+		"position"		"0.000000 -6.500000 -5.000000"
+		"angles"		"28.500000 10.500000 0.000000"
+		"bonemerge"		"0"
+		"attachment"		"facemask"
+		"team"			"ct,t"
+	}
+	"linkhat"
+	{
+		"displayname"		"linkhat"
+		"model"			"models/gmod_tower/linkhat.mdl"
+		"position"		"0.000000 -6.500000 -5.000000"
+		"angles"		"28.500000 10.500000 0.000000"
+		"bonemerge"		"0"
+		"attachment"		"facemask"
+		"team"			"ct,t"
+	}
+
+	"majorasmask"
+	{
+		"displayname"		"majorasmask"
+		"model"			"models/gmod_tower/majorasmask.mdl"
+		"position"		"0.000000 -6.500000 -5.000000"
+		"angles"		"28.500000 10.500000 0.000000"
+		"bonemerge"		"0"
+		"attachment"		"facemask"
+		"team"			"ct,t"
+	}
+
+	"midnahat"
+	{
+		"displayname"		"midnahat"
+		"model"		"models/gmod_tower/midnahat.mdl"
+		"position"		"0.000000 -6.500000 -5.000000"
+		"angles"		"28.500000 10.500000 0.000000"
+		"bonemerge"		"0"
+		"attachment"		"facemask"
+		"team"		"ct,t"
+	}
+
+	"pimphat"
+	{
+		"displayname"		"pimphat"
+		"model"		"models/gmod_tower/pimphat.mdl"
+		"position"		"0.000000 -6.500000 -5.000000"
+		"angles"		"28.500000 10.500000 0.000000"
+		"bonemerge"		"0"
+		"attachment"		"facemask"
+		"team"		"ct,t"
+	}
+
+	"seusshat"
+	{
+		"displayname"		"seusshat"
+		"model"			"models/gmod_tower/seusshat.mdl"
+		"position"		"0.000000 -6.500000 -5.000000"
+		"angles"		"28.500000 10.500000 0.000000"
+		"bonemerge"		"0"
+		"attachment"		"facemask"
+		"team"			"ct,t"
+	}
+
+	"sombrero"
+	{
+		"displayname"		"sombrero"
+		"model"		"models/gmod_tower/sombrero.mdl"
+		"position"		"0.000000 -6.500000 -5.000000"
+		"angles"		"28.500000 10.500000 0.000000"
+		"bonemerge"		"0"
+		"attachment"		"facemask"
+		"team"		"ct,t"
+	}
+
+	"witchhat"
+	{
+		"displayname"		"witchhat"
+		"model"			"models/gmod_tower/witchhat.mdl"
+		"position"		"0.000000 -6.500000 -5.000000"
+		"angles"		"28.500000 10.500000 0.000000"
+		"bonemerge"		"0"
+		"attachment"		"facemask"
+		"team"			"ct,t"
+	}
+}

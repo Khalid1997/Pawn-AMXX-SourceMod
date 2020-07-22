@@ -1,0 +1,115 @@
+4:55 PM - MIhawk -R-: When the 10 players joins the server the players in same team from the matchpage in the website will be moved to the same team.
+And knife round will start everyone will be disarmed money $0 and c4 removed from T. after they knife the winner team, all winner team members will get a vote menu choosing Swap or Stay the option with high vote will be proceed.
+Then after they swapped or stayed the round will be restart 3 times then match will be live the money will go back to $800 and c4 is back.
+15 rounds then 10 seconds "astra7a" then second half begins. same as competitive rules who reach 16 win rounds, wins the game but if 15-15 no overtime the match will be finished and all will be kicked in 6 seconds.
+4:55 PM - MIhawk -R-: brslk al commands list in 5 mins
+5:13 PM - MIhawk -R- is now Online.
+5:13 PM - MIhawk -R-: ok?
+5:13 PM - Khalid ...: bdeet ana
+5:13 PM - Khalid ...: sho ok
+5:13 PM - Khalid ...: xd
+5:14 PM - MIhawk -R-: a7a bdet?
+5:14 PM - MIhawk -R-: bdet bsho
+5:14 PM - Khalid ...: this
+5:14 PM - Khalid ...: #pragma semicolon 1
+
+#define PLUGIN_AUTHOR "Khalid"
+#define PLUGIN_VERSION "0.01"
+
+#include <sourcemod>
+
+public Plugin myinfo = 
+{
+name = "Match System",
+author = PLUGIN_AUTHOR,
+description = "Hi",
+version = PLUGIN_VERSION,
+url = "None"
+};
+
+#define MAX_TEAM_PLAYERS 5
+//#define ALLOW_ADMINS_JOIN
+
+int g_iPlayersConnected = 0;
+
+bool g_bIsPlayer[MAXPLAYERS];
+bool g_bMatchStarted = false;
+
+const char g_szPugConfigFolder[]  = "matchsystem";
+const char g_szWarmUpConfig[] = "warmup.cfg";
+const char g_szMatchConfig[] = "match.cfg";
+const char g_szKnifeRound[] = "knife_round.cfg";
+
+Database g_hSql;
+
+ConVarConVar_ServerAddress,
+ConVar_KnifeRound_Enabled,
+ConVar_KnifeRound_DisarmC4;
+
+int g_iTeamPlayers[2][MAX_MATCH_PLAYERS];
+
+public APLRes AskPluginLoad2(Handle plugin, bool bLate, char[] szError, int iErrMax)
+{
+return APLRes_Success;
+}
+
+public void OnPluginStart()
+{
+g_hSql.Connect(
+}
+
+public void OnClientAuthorized(client, char[] szSteamId)
+{
+CheckPlayer(client, szSteamId);
+}
+
+public void OnClientDisconnect(client)
+{
+if(!g_bIsPlayers[client])
+{
+return;
+}
+
+g_iPlayersConnected--;
+}
+
+CheckPlayer(client, szSteamId)
+{
+g_iPlayersConnected++;
+}
+5:14 PM - MIhawk -R-: OMG
+5:14 PM - MIhawk -R-: nice
+5:14 PM - MIhawk -R-: w 97
+5:14 PM - MIhawk -R-: 5ald
+5:15 PM - MIhawk -R-: thwany
+5:15 PM - MIhawk -R-: b36ek 9ora
+5:19 PM - MIhawk -R-: https://i.imgur.com/zUzMVnx.png
+5:19 PM - MIhawk -R-: in al report al awl ale 3l ysar hatha al damage ale ent sweth lenemy
+5:20 PM - MIhawk -R-: w al damage al thani ale ent astmlta
+5:20 PM - MIhawk -R-: 16 in 1 means 16 damage in 1 hit
+5:20 PM - MIhawk -R-: w 5le al prefix
+5:20 PM - MIhawk -R-: [CEL}
+5:20 PM - MIhawk -R-: [CEL]*
+5:20 PM - Khalid ...: ok
+5:20 PM - MIhawk -R-: dgega bro7 ashof akly 5l9 w a36ek al commands
+5:20 PM - MIhawk -R-: hatha al damage report
+5:20 PM - MIhawk -R-: yswe print llclient
+5:20 PM - MIhawk -R-: b3d maymot
+5:30 PM - Khalid ...: bsawy block 7g spec team
+5:30 PM - Khalid ...: ok ?
+5:30 PM - MIhawk -R-: ok
+5:30 PM - MIhawk -R-: w block llselect teams
+5:30 PM - Khalid ...: yea ik
+5:48 PM - MIhawk -R-: .stats <name>
+5:48 PM - MIhawk -R-: wla agolk
+5:48 PM - MIhawk -R-: no need .stats
+5:49 PM - MIhawk -R-: .block <name>
+5:50 PM - MIhawk -R-: yswe block lplayer mn al game w y76h fe databse
+5:50 PM - MIhawk -R-: +buddy <name>
+5:50 PM - MIhawk -R-: y'9ef player to your friends list in website
+5:50 PM - MIhawk -R-: -buddy <name> remove player from the friends list in website
+5:50 PM - MIhawk -R-: .dmg ale ho damage report
+5:51 PM - MIhawk -R-: tgdr tst5dma yom tkon myt aw fe al freezetime
+5:51 PM - MIhawk -R-: but it will automatically displayed when you die
+5:52 PM - MIhawk -R-: brb bnam ana
+7:58 PM - MIhawk -R- is now Offline.

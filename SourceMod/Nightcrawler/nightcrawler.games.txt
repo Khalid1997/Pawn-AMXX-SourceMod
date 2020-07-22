@@ -1,0 +1,36 @@
+"Games"
+{
+    "tf"
+    {
+        "Offsets"
+        {
+            "CTeam::AddPlayer"
+            {
+                "linux"  "202"
+                "windows"   "201"
+            }
+            "CTeam::RemovePlayer"
+            {
+                "linux"  "203"
+                "windows"   "202"
+            }
+        }
+    }
+
+    "csgo"
+    {
+        "Offsets"
+        {
+            "CTeam::AddPlayer"
+            {
+                "linux"  "163"
+                "windows"   "162"
+            }
+            "CTeam::RemovePlayer"
+            {
+                "linux"  "164"
+                "windows"   "163"
+            }
+        }
+    }
+}

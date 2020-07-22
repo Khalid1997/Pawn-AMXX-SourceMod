@@ -1,0 +1,48 @@
+Server List:
+	(Server) Id
+	ServerIP
+	ServerPort,
+	Current Match Id
+	Enabled
+
+Match List:
+	(match) id
+	is_tournament
+	tournament_id
+	Match Issue Time
+	Match Start Time
+	match end time
+	match end reason
+	Match Team1 Score
+	Match Team2 Score
+	match end data
+	recorded stats
+	Match map
+	Team1Id
+	Team2Id
+	Winning Team Id
+	
+PlayerData:
+	id
+	referenceId
+	SteamAuthId
+	PlayerConnected
+	MatchId
+	Team Id	
+	Stats Stuff
+	
+TeamData:
+	(team) id
+	team_name
+	founding_date
+	founder_id
+	leader_id
+	cached_wins
+	cached_losses
+	cached_rating
+	
+Team Members:
+	id
+	team_id
+	clientid,
+	auth
